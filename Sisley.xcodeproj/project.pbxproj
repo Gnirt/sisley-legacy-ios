@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82F2B5361BE8C63F0020AA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5351BE8C63F0020AA2C /* main.m */; };
+		82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5381BE8C63F0020AA2C /* AppDelegate.m */; };
+		82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B53B1BE8C63F0020AA2C /* ViewController.m */; };
+		82F2B53F1BE8C63F0020AA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B53D1BE8C63F0020AA2C /* Main.storyboard */; };
+		82F2B5411BE8C63F0020AA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B5401BE8C63F0020AA2C /* Assets.xcassets */; };
+		82F2B5441BE8C63F0020AA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */; };
+		82F2B54F1BE8C63F0020AA2C /* SisleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B54E1BE8C63F0020AA2C /* SisleyTests.m */; };
+		82F2B55A1BE8C63F0020AA2C /* SisleyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5591BE8C63F0020AA2C /* SisleyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82F2B54B1BE8C63F0020AA2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F2B5291BE8C63F0020AA2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F2B5301BE8C63F0020AA2C;
+			remoteInfo = Sisley;
+		};
+		82F2B5561BE8C63F0020AA2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F2B5291BE8C63F0020AA2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F2B5301BE8C63F0020AA2C;
+			remoteInfo = Sisley;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82F2B5311BE8C63F0020AA2C /* Sisley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sisley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F2B5351BE8C63F0020AA2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82F2B5371BE8C63F0020AA2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82F2B5381BE8C63F0020AA2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82F2B53A1BE8C63F0020AA2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82F2B53B1BE8C63F0020AA2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82F2B53E1BE8C63F0020AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82F2B5401BE8C63F0020AA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82F2B5431BE8C63F0020AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82F2B5451BE8C63F0020AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F2B54A1BE8C63F0020AA2C /* SisleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SisleyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F2B54E1BE8C63F0020AA2C /* SisleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SisleyTests.m; sourceTree = "<group>"; };
+		82F2B5501BE8C63F0020AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F2B5551BE8C63F0020AA2C /* SisleyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SisleyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F2B5591BE8C63F0020AA2C /* SisleyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SisleyUITests.m; sourceTree = "<group>"; };
+		82F2B55B1BE8C63F0020AA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82F2B52E1BE8C63F0020AA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5471BE8C63F0020AA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5521BE8C63F0020AA2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82F2B5281BE8C63F0020AA2C = {
+			isa = PBXGroup;
+			children = (
+				82F2B5331BE8C63F0020AA2C /* Sisley */,
+				82F2B54D1BE8C63F0020AA2C /* SisleyTests */,
+				82F2B5581BE8C63F0020AA2C /* SisleyUITests */,
+				82F2B5321BE8C63F0020AA2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82F2B5321BE8C63F0020AA2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B5311BE8C63F0020AA2C /* Sisley.app */,
+				82F2B54A1BE8C63F0020AA2C /* SisleyTests.xctest */,
+				82F2B5551BE8C63F0020AA2C /* SisleyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82F2B5331BE8C63F0020AA2C /* Sisley */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B5371BE8C63F0020AA2C /* AppDelegate.h */,
+				82F2B5381BE8C63F0020AA2C /* AppDelegate.m */,
+				82F2B53A1BE8C63F0020AA2C /* ViewController.h */,
+				82F2B53B1BE8C63F0020AA2C /* ViewController.m */,
+				82F2B53D1BE8C63F0020AA2C /* Main.storyboard */,
+				82F2B5401BE8C63F0020AA2C /* Assets.xcassets */,
+				82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */,
+				82F2B5451BE8C63F0020AA2C /* Info.plist */,
+				82F2B5341BE8C63F0020AA2C /* Supporting Files */,
+			);
+			path = Sisley;
+			sourceTree = "<group>";
+		};
+		82F2B5341BE8C63F0020AA2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B5351BE8C63F0020AA2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82F2B54D1BE8C63F0020AA2C /* SisleyTests */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B54E1BE8C63F0020AA2C /* SisleyTests.m */,
+				82F2B5501BE8C63F0020AA2C /* Info.plist */,
+			);
+			path = SisleyTests;
+			sourceTree = "<group>";
+		};
+		82F2B5581BE8C63F0020AA2C /* SisleyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82F2B5591BE8C63F0020AA2C /* SisleyUITests.m */,
+				82F2B55B1BE8C63F0020AA2C /* Info.plist */,
+			);
+			path = SisleyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82F2B5301BE8C63F0020AA2C /* Sisley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F2B55E1BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "Sisley" */;
+			buildPhases = (
+				82F2B52D1BE8C63F0020AA2C /* Sources */,
+				82F2B52E1BE8C63F0020AA2C /* Frameworks */,
+				82F2B52F1BE8C63F0020AA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sisley;
+			productName = Sisley;
+			productReference = 82F2B5311BE8C63F0020AA2C /* Sisley.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82F2B5491BE8C63F0020AA2C /* SisleyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F2B5611BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "SisleyTests" */;
+			buildPhases = (
+				82F2B5461BE8C63F0020AA2C /* Sources */,
+				82F2B5471BE8C63F0020AA2C /* Frameworks */,
+				82F2B5481BE8C63F0020AA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82F2B54C1BE8C63F0020AA2C /* PBXTargetDependency */,
+			);
+			name = SisleyTests;
+			productName = SisleyTests;
+			productReference = 82F2B54A1BE8C63F0020AA2C /* SisleyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82F2B5541BE8C63F0020AA2C /* SisleyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F2B5641BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "SisleyUITests" */;
+			buildPhases = (
+				82F2B5511BE8C63F0020AA2C /* Sources */,
+				82F2B5521BE8C63F0020AA2C /* Frameworks */,
+				82F2B5531BE8C63F0020AA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82F2B5571BE8C63F0020AA2C /* PBXTargetDependency */,
+			);
+			name = SisleyUITests;
+			productName = SisleyUITests;
+			productReference = 82F2B5551BE8C63F0020AA2C /* SisleyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82F2B5291BE8C63F0020AA2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Ziiw;
+				TargetAttributes = {
+					82F2B5301BE8C63F0020AA2C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VXURVZN7QN;
+					};
+					82F2B5491BE8C63F0020AA2C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VXURVZN7QN;
+						TestTargetID = 82F2B5301BE8C63F0020AA2C;
+					};
+					82F2B5541BE8C63F0020AA2C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = VXURVZN7QN;
+						TestTargetID = 82F2B5301BE8C63F0020AA2C;
+					};
+				};
+			};
+			buildConfigurationList = 82F2B52C1BE8C63F0020AA2C /* Build configuration list for PBXProject "Sisley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82F2B5281BE8C63F0020AA2C;
+			productRefGroup = 82F2B5321BE8C63F0020AA2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82F2B5301BE8C63F0020AA2C /* Sisley */,
+				82F2B5491BE8C63F0020AA2C /* SisleyTests */,
+				82F2B5541BE8C63F0020AA2C /* SisleyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82F2B52F1BE8C63F0020AA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F2B5441BE8C63F0020AA2C /* LaunchScreen.storyboard in Resources */,
+				82F2B5411BE8C63F0020AA2C /* Assets.xcassets in Resources */,
+				82F2B53F1BE8C63F0020AA2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5481BE8C63F0020AA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5531BE8C63F0020AA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82F2B52D1BE8C63F0020AA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */,
+				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
+				82F2B5361BE8C63F0020AA2C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5461BE8C63F0020AA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F2B54F1BE8C63F0020AA2C /* SisleyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F2B5511BE8C63F0020AA2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F2B55A1BE8C63F0020AA2C /* SisleyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82F2B54C1BE8C63F0020AA2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F2B5301BE8C63F0020AA2C /* Sisley */;
+			targetProxy = 82F2B54B1BE8C63F0020AA2C /* PBXContainerItemProxy */;
+		};
+		82F2B5571BE8C63F0020AA2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F2B5301BE8C63F0020AA2C /* Sisley */;
+			targetProxy = 82F2B5561BE8C63F0020AA2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82F2B53D1BE8C63F0020AA2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82F2B53E1BE8C63F0020AA2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82F2B5431BE8C63F0020AA2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82F2B55C1BE8C63F0020AA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82F2B55D1BE8C63F0020AA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82F2B55F1BE8C63F0020AA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sisley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.Sisley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82F2B5601BE8C63F0020AA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sisley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.Sisley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		82F2B5621BE8C63F0020AA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SisleyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.SisleyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sisley.app/Sisley";
+			};
+			name = Debug;
+		};
+		82F2B5631BE8C63F0020AA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SisleyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.SisleyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sisley.app/Sisley";
+			};
+			name = Release;
+		};
+		82F2B5651BE8C63F0020AA2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SisleyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.SisleyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sisley;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		82F2B5661BE8C63F0020AA2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SisleyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziiw.SisleyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Sisley;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82F2B52C1BE8C63F0020AA2C /* Build configuration list for PBXProject "Sisley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F2B55C1BE8C63F0020AA2C /* Debug */,
+				82F2B55D1BE8C63F0020AA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F2B55E1BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "Sisley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F2B55F1BE8C63F0020AA2C /* Debug */,
+				82F2B5601BE8C63F0020AA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82F2B5611BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "SisleyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F2B5621BE8C63F0020AA2C /* Debug */,
+				82F2B5631BE8C63F0020AA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82F2B5641BE8C63F0020AA2C /* Build configuration list for PBXNativeTarget "SisleyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F2B5651BE8C63F0020AA2C /* Debug */,
+				82F2B5661BE8C63F0020AA2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82F2B5291BE8C63F0020AA2C /* Project object */;
+}
