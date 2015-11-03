@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82E58A6B1BE8CBE50078E780 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 82E58A6A1BE8CBE50078E780 /* .gitignore */; };
+		82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E58A6D1BE8FF250078E780 /* SIPreviewView.m */; };
 		82F2B5361BE8C63F0020AA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5351BE8C63F0020AA2C /* main.m */; };
 		82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5381BE8C63F0020AA2C /* AppDelegate.m */; };
 		82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B53B1BE8C63F0020AA2C /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		50C3B70D0F7B5768F2CF4EA1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FB3235D60C34EDA69C1008 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		82E58A6A1BE8CBE50078E780 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		82E58A6C1BE8FF250078E780 /* SIPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPreviewView.h; sourceTree = "<group>"; };
+		82E58A6D1BE8FF250078E780 /* SIPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPreviewView.m; sourceTree = "<group>"; };
 		82F2B5311BE8C63F0020AA2C /* Sisley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sisley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F2B5351BE8C63F0020AA2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82F2B5371BE8C63F0020AA2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				82F2B53B1BE8C63F0020AA2C /* ViewController.m */,
 				82E58A6A1BE8CBE50078E780 /* .gitignore */,
 				82F2B53D1BE8C63F0020AA2C /* Main.storyboard */,
+				82E58A6C1BE8FF250078E780 /* SIPreviewView.h */,
+				82E58A6D1BE8FF250078E780 /* SIPreviewView.m */,
 				82F2B5401BE8C63F0020AA2C /* Assets.xcassets */,
 				82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */,
 				82F2B5451BE8C63F0020AA2C /* Info.plist */,
@@ -355,6 +360,7 @@
 				82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */,
 				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
 				82F2B5361BE8C63F0020AA2C /* main.m in Sources */,
+				82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
