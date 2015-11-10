@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485CE1BEA17C400A862A7 /* CameraViewController.m */; };
+		826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485D11BEA434F00A862A7 /* SIFaceViewController.m */; };
+		82A1FAC01BF0E4B800351AE6 /* SIFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A1FABF1BF0E4B800351AE6 /* SIFace.m */; };
 		82E58A6B1BE8CBE50078E780 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 82E58A6A1BE8CBE50078E780 /* .gitignore */; };
 		82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E58A6D1BE8FF250078E780 /* SIPreviewView.m */; };
 		82F2B5361BE8C63F0020AA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5351BE8C63F0020AA2C /* main.m */; };
 		82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5381BE8C63F0020AA2C /* AppDelegate.m */; };
-		82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B53B1BE8C63F0020AA2C /* ViewController.m */; };
 		82F2B53F1BE8C63F0020AA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B53D1BE8C63F0020AA2C /* Main.storyboard */; };
 		82F2B5411BE8C63F0020AA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B5401BE8C63F0020AA2C /* Assets.xcassets */; };
 		82F2B5441BE8C63F0020AA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */; };
@@ -40,6 +42,12 @@
 /* Begin PBXFileReference section */
 		50C3B70D0F7B5768F2CF4EA1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FB3235D60C34EDA69C1008 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		826485CD1BEA17C400A862A7 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		826485CE1BEA17C400A862A7 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		826485D01BEA434F00A862A7 /* SIFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFaceViewController.h; sourceTree = "<group>"; };
+		826485D11BEA434F00A862A7 /* SIFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFaceViewController.m; sourceTree = "<group>"; };
+		82A1FABE1BF0E4B800351AE6 /* SIFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIFace.h; path = models/SIFace.h; sourceTree = "<group>"; };
+		82A1FABF1BF0E4B800351AE6 /* SIFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIFace.m; path = models/SIFace.m; sourceTree = "<group>"; };
 		82E58A6A1BE8CBE50078E780 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		82E58A6C1BE8FF250078E780 /* SIPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPreviewView.h; sourceTree = "<group>"; };
 		82E58A6D1BE8FF250078E780 /* SIPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPreviewView.m; sourceTree = "<group>"; };
@@ -47,8 +55,6 @@
 		82F2B5351BE8C63F0020AA2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82F2B5371BE8C63F0020AA2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82F2B5381BE8C63F0020AA2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		82F2B53A1BE8C63F0020AA2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		82F2B53B1BE8C63F0020AA2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		82F2B53E1BE8C63F0020AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82F2B5401BE8C63F0020AA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82F2B5431BE8C63F0020AA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		82A1FABD1BF0E47C00351AE6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				82A1FABE1BF0E4B800351AE6 /* SIFace.h */,
+				82A1FABF1BF0E4B800351AE6 /* SIFace.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		82F2B5281BE8C63F0020AA2C = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +145,13 @@
 		82F2B5331BE8C63F0020AA2C /* Sisley */ = {
 			isa = PBXGroup;
 			children = (
+				82A1FABD1BF0E47C00351AE6 /* models */,
 				82F2B5371BE8C63F0020AA2C /* AppDelegate.h */,
 				82F2B5381BE8C63F0020AA2C /* AppDelegate.m */,
-				82F2B53A1BE8C63F0020AA2C /* ViewController.h */,
-				82F2B53B1BE8C63F0020AA2C /* ViewController.m */,
+				826485CD1BEA17C400A862A7 /* CameraViewController.h */,
+				826485CE1BEA17C400A862A7 /* CameraViewController.m */,
+				826485D01BEA434F00A862A7 /* SIFaceViewController.h */,
+				826485D11BEA434F00A862A7 /* SIFaceViewController.m */,
 				82E58A6A1BE8CBE50078E780 /* .gitignore */,
 				82F2B53D1BE8C63F0020AA2C /* Main.storyboard */,
 				82E58A6C1BE8FF250078E780 /* SIPreviewView.h */,
@@ -357,9 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F2B53C1BE8C63F0020AA2C /* ViewController.m in Sources */,
+				82A1FAC01BF0E4B800351AE6 /* SIFace.m in Sources */,
+				826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */,
 				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
 				82F2B5361BE8C63F0020AA2C /* main.m in Sources */,
+				826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */,
 				82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
