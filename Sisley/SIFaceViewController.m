@@ -7,7 +7,10 @@
 //
 
 #import "SIFaceViewController.h"
-#import "SIFace.h"
+#import "SIFaceItem.h"
+#import "SIEye.h"
+#import "SILip.h"
+#import "SINose.h"
 
 @interface SIFaceViewController ()
 
@@ -21,29 +24,55 @@
     self.photoImageView.image = [self decodeBase64ToImage:self.imageString];
     
     NSDictionary *faceAttributes = [[[[self.faceData objectForKey:@"images"] objectAtIndex:0] objectForKey:@"faces"] objectAtIndex:0];
+    SIFaceItem *face = [[SIFaceItem alloc] initWithDictionary:faceAttributes];
     
-    SIFace *face = [[SIFace alloc] initWithDictionary:faceAttributes];
+    int i;
+    NSUInteger count;
     
-    [self drawCircle:face];
+    count = [face.faceItems count];
     
-    NSLog(@"Left eye corner leftX: %f", face.leftEyeCornerLeftX);
-    
+    for (i = 0; i < count; i++){
+        if([[face.faceItems objectAtIndex: i] isKindOfClass:[SIEye class]]){
+            self.strokeColor = [UIColor redColor];
+            [self drawCircle:[face.faceItems objectAtIndex: i]];
+        }
+        
+        if([[face.faceItems objectAtIndex: i] isKindOfClass:[SINose class]]){
+            self.strokeColor = [UIColor greenColor];
+            [self drawCircle:[face.faceItems objectAtIndex: i]];
+        }
+        
+        if([[face.faceItems objectAtIndex: i] isKindOfClass:[SILip class]]){
+            self.strokeColor = [UIColor blueColor];
+            [self drawCircle:[face.faceItems objectAtIndex: i]];
+        }
+    }
 }
 
-- (void)drawCircle:(SIFace *)face
+- (void)drawCircle:(NSObject *)faceItems
 {
+    NSLog(@"%@", faceItems);
+    
+    
+//    [faceITems valueForKey:<#(nonnull NSString *)#>]
+    
+//    for (NSString *key in faceItems) {
+//    
+//        NSLog(@"%@", [self valueForKey:key]);
+//    }
+
+    
+    
     // Begin path
     UIGraphicsBeginImageContext(self.view.frame.size);
     
     // Set the circle outerline-width
     CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 1.0);
     
-    // Set the circle outerline-colour
-    [[UIColor redColor] set];
-    
-    
     // Create Circle
-    CGContextAddArc(UIGraphicsGetCurrentContext(), face.leftEyeCornerLeftX, face.leftEyeCornerLeftY, 4, 0.0, M_PI * 2.0, YES);
+//    CGContextAddArc(UIGraphicsGetCurrentContext(), face.eleft.cornerLeft.x, face.eyes.left.cornerLeft.y, 4, 0.0, M_PI * 2.0, YES);
+    
+//    NSLog(@"%f, %f", face.eyes.left.cornerLeft.x, face.eyes.left.cornerLeft.y);
     
     // Draw
     CGContextStrokePath(UIGraphicsGetCurrentContext());
@@ -51,6 +80,7 @@
     // Draw on point view
     self.pointImageView.image = UIGraphicsGetImageFromCurrentImageContext();
     
+    // End path
     UIGraphicsEndImageContext();
 }
 

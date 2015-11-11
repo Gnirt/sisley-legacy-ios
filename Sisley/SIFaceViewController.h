@@ -15,5 +15,6 @@
 
 @property (strong, nonatomic) NSString *imageString;
 @property (strong, nonatomic) NSDictionary *faceData;
+@property (strong, nonatomic) UIColor *strokeColor;
 
 @end
