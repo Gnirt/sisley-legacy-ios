@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OwW-Uh-YNz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i0A-UB-a5I">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -119,7 +119,7 @@ reçus dans ton invitation.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icu-hn-oNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="486"/>
+            <point key="canvasLocation" x="832" y="486"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Kxu-Eg-Bpm">
@@ -207,7 +207,8 @@ reçus dans ton invitation.</string>
                                             <constraint firstAttribute="width" constant="300" id="Yzx-1y-5D1"/>
                                             <constraint firstAttribute="height" constant="68" id="nz5-92-PLq"/>
                                         </constraints>
-                                        <string key="text">Tape sur ce bouton pour continuer l'expériencepour continuer l’expérience</string>
+                                        <string key="text">Tape sur ce bouton pour continuer l'expérience
+pour continuer l’expérience</string>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -313,7 +314,7 @@ reçus dans ton invitation.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7of-rB-2ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="486"/>
+            <point key="canvasLocation" x="1380" y="486"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -439,7 +440,7 @@ reçus dans ton invitation.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1200" y="486"/>
+            <point key="canvasLocation" x="2012" y="486"/>
         </scene>
         <!--Bump View Controller-->
         <scene sceneID="TB1-0Y-Cxw">
@@ -538,8 +539,8 @@ reçus dans ton invitation.</string>
                                     <action selector="prevAsset:" destination="YvM-ax-Qwl" eventType="touchUpInside" id="QM1-gp-rm2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRX-xH-Ib9" userLabel="nextAsset">
-                                <rect key="frame" x="290" y="273" width="12.5" height="22"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRX-xH-Ib9" userLabel="nextAsset">
+                                <rect key="frame" x="291.5" y="273" width="12.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12.5" id="2CW-Gr-ZgJ"/>
                                     <constraint firstAttribute="height" constant="22" id="oWM-i8-51A"/>
@@ -662,30 +663,130 @@ reçus dans ton invitation.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsE-ee-4fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="486"/>
+            <point key="canvasLocation" x="2499" y="486"/>
+        </scene>
+        <!--Tuto Main View Controller-->
+        <scene sceneID="ooF-9z-5tC">
+            <objects>
+                <viewController id="0U6-1H-Jw7" customClass="TutoMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cgu-I7-HRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYe-dQ-4CY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbA-ek-JlD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.39438808900523559" green="0.39438808900523559" blue="0.39438808900523559" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NDn-eh-Jwp"/>
+                    <connections>
+                        <segue destination="B1o-L2-OMR" kind="show" id="voe-es-man"/>
+                        <segue destination="FE7-DM-UBd" kind="show" identifier="goMom" id="bHe-DE-3J7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvi-7H-zlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="-370"/>
+        </scene>
+        <!--Mom Login View Controller-->
+        <scene sceneID="LFd-up-Brc">
+            <objects>
+                <viewController id="FE7-DM-UBd" customClass="MomLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jxD-gV-cgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="uyP-8V-ifJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sql-Ba-hHC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-mom" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-sP-8Ok">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-cZ-JeJ">
+                                <rect key="frame" x="34" y="38" width="252" height="117"/>
+                                <string key="text">En tant qu’Ambassadrice Sisley,
+connectez-vous pour
+débuter l’expérience.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYi-bj-vNI">
+                                <rect key="frame" x="85" y="249" width="150" height="1"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="931-Km-xfX">
+                                <rect key="frame" x="85" y="202" width="150" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yU6-si-DSX" userLabel="mot de passe">
+                                <rect key="frame" x="85" y="263" width="150" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Devenir Ambassadrice !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-i8-akP">
+                                <rect key="frame" x="34" y="425" width="252" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LK-q6-h8u" userLabel="registerButton">
+                                <rect key="frame" x="135" y="490" width="50" height="50"/>
+                                <state key="normal" image="button-add-mom"/>
+                                <connections>
+                                    <action selector="goToRegistration:" destination="FE7-DM-UBd" eventType="touchUpInside" id="D7n-mE-FJm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-2E-uyN" userLabel="loginButton">
+                                <rect key="frame" x="135" y="342" width="50" height="50"/>
+                                <state key="normal" image="button-next-mom"/>
+                                <connections>
+                                    <action selector="login:" destination="FE7-DM-UBd" eventType="touchUpInside" id="XQj-7V-ezh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="931-Km-xfX" id="6G9-Wq-jbL"/>
+                        <outlet property="passwordTextField" destination="yU6-si-DSX" id="9FD-Ha-PDE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVO-zy-dIH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="1551"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="bOA-pE-TfD">
+        <scene sceneID="v2Z-cl-uKZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OwW-Uh-YNz" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="i0A-UB-a5I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGh-ge-LsQ">
+                    <navigationItem key="navigationItem" id="9Y8-71-96d"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uGx-RD-WOh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="B1o-L2-OMR" kind="relationship" relationship="rootViewController" id="6wH-Dr-MCF"/>
+                        <segue destination="0U6-1H-Jw7" kind="relationship" relationship="rootViewController" id="Ea9-9Q-xwl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0AZ-95-3pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISZ-2g-ceY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="-370"/>
+            <point key="canvasLocation" x="-532" y="-362"/>
         </scene>
     </scenes>
     <resources>
         <image name="apn" width="60" height="39"/>
         <image name="back" width="25" height="44"/>
+        <image name="bg-mom" width="640" height="1136"/>
+        <image name="button-add-mom" width="75" height="75"/>
+        <image name="button-next-mom" width="75" height="75"/>
         <image name="home-link" width="272" height="499"/>
         <image name="home-next-tuto" width="75" height="75"/>
         <image name="levre" width="77" height="40"/>

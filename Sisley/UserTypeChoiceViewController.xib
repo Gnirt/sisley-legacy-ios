@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserTypeChoiceViewController">
+            <connections>
+                <outlet property="daughterView" destination="mEq-4E-WWZ" id="Heo-jU-Tlf"/>
+                <outlet property="momView" destination="2ml-sx-s2K" id="hUO-lD-o9J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ml-sx-s2K" userLabel="mom">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picto-mere.png" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-Zr-thB">
+                            <rect key="frame" x="36" y="104" width="75" height="75"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lH8-Nf-RCO" userLabel="goToMomButton">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                            <connections>
+                                <action selector="goToMom:" destination="-1" eventType="touchUpInside" id="Pim-aa-70o"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agF-eN-Omd">
+                            <rect key="frame" x="127" y="0.0" width="193" height="284"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">Je veux initier ma fille
+au maquillage</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="284" id="HsZ-cJ-B5Q"/>
+                        <constraint firstAttribute="width" constant="320" id="QYM-Lt-Ps1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEq-4E-WWZ" userLabel="daughter">
+                    <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5H-vg-vJG">
+                            <rect key="frame" x="127" y="0.0" width="189" height="284"/>
+                            <color key="backgroundColor" red="0.25882352941176467" green="0.88627450980392153" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">Je veux être initiée
+par ma mère</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picto-fille.png" translatesAutoresizingMaskIntoConstraints="NO" id="cXK-bm-oCc">
+                            <rect key="frame" x="36" y="104" width="75" height="75"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rri-Vj-C6q" userLabel="goToDaughterButton">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                            <connections>
+                                <action selector="goToDaughter:" destination="-1" eventType="touchUpInside" id="olN-gc-TV0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.8862745098" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="284" id="8Bb-5g-uya"/>
+                        <constraint firstAttribute="width" constant="320" id="x4K-vP-Tcy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mEq-4E-WWZ" firstAttribute="top" secondItem="2ml-sx-s2K" secondAttribute="bottom" id="9m2-la-R23"/>
+                <constraint firstAttribute="bottom" secondItem="mEq-4E-WWZ" secondAttribute="bottom" id="Cbg-2V-WmI"/>
+                <constraint firstItem="mEq-4E-WWZ" firstAttribute="top" secondItem="2ml-sx-s2K" secondAttribute="bottom" id="MZl-Qe-XgQ"/>
+                <constraint firstAttribute="trailing" secondItem="mEq-4E-WWZ" secondAttribute="trailing" id="Pm2-c5-bVp"/>
+                <constraint firstItem="2ml-sx-s2K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAk-dm-y6G"/>
+                <constraint firstAttribute="trailing" secondItem="2ml-sx-s2K" secondAttribute="trailing" id="hvb-Zr-2ui"/>
+                <constraint firstItem="2ml-sx-s2K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pMH-qE-WcL"/>
+                <constraint firstItem="mEq-4E-WWZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r5r-49-5OT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="picto-fille.png" width="150" height="150"/>
+        <image name="picto-mere.png" width="150" height="150"/>
+    </resources>
+</document>

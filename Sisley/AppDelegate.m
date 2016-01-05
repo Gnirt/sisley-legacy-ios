@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Parse/Parse.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [Parse setApplicationId:@"L7MSAgqP9fdb77p7nFcmlGCG2FocXr88gTB3pLXC"
+                  clientKey:@"Saw4NnZwvwIIrFf4534gjDcL80zdFI1fjBDs0lWT"];
     return YES;
 }
 
