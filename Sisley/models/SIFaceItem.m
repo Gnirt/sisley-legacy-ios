@@ -24,6 +24,7 @@
     eyeLeft.browLeft = CGPointMake([json_dictionary[@"leftEyeBrowLeftX"] floatValue], [json_dictionary[@"leftEyeBrowLeftY"] floatValue]);
     eyeLeft.browMiddle = CGPointMake([json_dictionary[@"leftEyeBrowMiddleX"] floatValue], [json_dictionary[@"leftEyeBrowMiddleY"] floatValue]);
     eyeLeft.browRight = CGPointMake([json_dictionary[@"leftEyeBrowRightX"] floatValue], [json_dictionary[@"leftEyeBrowRightY"] floatValue]);
+    eyeLeft.isLeft = YES;
     
     // Right eye
     SIEye *eyeRight = [[SIEye alloc] init];
@@ -33,6 +34,7 @@
     eyeRight.browLeft = CGPointMake([json_dictionary[@"rightEyeBrowLeftX"] floatValue], [json_dictionary[@"rightEyeBrowLeftY"] floatValue]);
     eyeRight.browMiddle = CGPointMake([json_dictionary[@"rightEyeBrowMiddleX"] floatValue], [json_dictionary[@"rightEyeBrowMiddleY"] floatValue]);
     eyeRight.browRight = CGPointMake([json_dictionary[@"rightEyeBrowRightX"] floatValue], [json_dictionary[@"rightEyeBrowRightY"] floatValue]);
+    eyeRight.isLeft = NO;
     
     // Nose
     SINose *nose = [[SINose alloc] init];

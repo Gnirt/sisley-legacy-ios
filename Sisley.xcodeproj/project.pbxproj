@@ -12,7 +12,16 @@
 		829AF1191BF1ED5A0084F860 /* SIEye.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1121BF1ED5A0084F860 /* SIEye.m */; };
 		829AF11A1BF1ED5A0084F860 /* SILip.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1141BF1ED5A0084F860 /* SILip.m */; };
 		829AF11B1BF1ED5A0084F860 /* SINose.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1161BF1ED5A0084F860 /* SINose.m */; };
+		829AF1211BF393F40084F860 /* SILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1201BF393F40084F860 /* SILoginViewController.m */; };
 		82A1FAC01BF0E4B800351AE6 /* SIFaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A1FABF1BF0E4B800351AE6 /* SIFaceItem.m */; };
+		82DB5CA61C11A1E000DDC8B0 /* didot.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA01C11A1E000DDC8B0 /* didot.ttf */; };
+		82DB5CA71C11A1E000DDC8B0 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA11C11A1E000DDC8B0 /* Montserrat-Black.otf */; };
+		82DB5CA81C11A1E000DDC8B0 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA21C11A1E000DDC8B0 /* Montserrat-Bold.otf */; };
+		82DB5CA91C11A1E000DDC8B0 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA31C11A1E000DDC8B0 /* Montserrat-Hairline.otf */; };
+		82DB5CAA1C11A1E000DDC8B0 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA41C11A1E000DDC8B0 /* Montserrat-Light.otf */; };
+		82DB5CAB1C11A1E000DDC8B0 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DB5CA51C11A1E000DDC8B0 /* Montserrat-Regular.otf */; };
+		82E4890B1BF4ABA1002E3EC7 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E4890A1BF4ABA1002E3EC7 /* SIHomeViewController.m */; };
+		82E4890E1BF4AEF5002E3EC7 /* SIFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E4890D1BF4AEF5002E3EC7 /* SIFaceView.m */; };
 		82E58A6B1BE8CBE50078E780 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 82E58A6A1BE8CBE50078E780 /* .gitignore */; };
 		82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E58A6D1BE8FF250078E780 /* SIPreviewView.m */; };
 		82F2B5361BE8C63F0020AA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F2B5351BE8C63F0020AA2C /* main.m */; };
@@ -55,8 +64,20 @@
 		829AF1141BF1ED5A0084F860 /* SILip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SILip.m; path = models/face/SILip.m; sourceTree = "<group>"; };
 		829AF1151BF1ED5A0084F860 /* SINose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SINose.h; path = models/face/SINose.h; sourceTree = "<group>"; };
 		829AF1161BF1ED5A0084F860 /* SINose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SINose.m; path = models/face/SINose.m; sourceTree = "<group>"; };
+		829AF11F1BF393F40084F860 /* SILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SILoginViewController.h; sourceTree = "<group>"; };
+		829AF1201BF393F40084F860 /* SILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SILoginViewController.m; sourceTree = "<group>"; };
 		82A1FABE1BF0E4B800351AE6 /* SIFaceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIFaceItem.h; path = models/SIFaceItem.h; sourceTree = "<group>"; };
 		82A1FABF1BF0E4B800351AE6 /* SIFaceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIFaceItem.m; path = models/SIFaceItem.m; sourceTree = "<group>"; };
+		82DB5CA01C11A1E000DDC8B0 /* didot.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = didot.ttf; path = fonts/didot.ttf; sourceTree = "<group>"; };
+		82DB5CA11C11A1E000DDC8B0 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.otf"; path = "fonts/Montserrat-Black.otf"; sourceTree = "<group>"; };
+		82DB5CA21C11A1E000DDC8B0 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "fonts/Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		82DB5CA31C11A1E000DDC8B0 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Hairline.otf"; path = "fonts/Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		82DB5CA41C11A1E000DDC8B0 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.otf"; path = "fonts/Montserrat-Light.otf"; sourceTree = "<group>"; };
+		82DB5CA51C11A1E000DDC8B0 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		82E489091BF4ABA1002E3EC7 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
+		82E4890A1BF4ABA1002E3EC7 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
+		82E4890C1BF4AEF5002E3EC7 /* SIFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFaceView.h; sourceTree = "<group>"; };
+		82E4890D1BF4AEF5002E3EC7 /* SIFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFaceView.m; sourceTree = "<group>"; };
 		82E58A6A1BE8CBE50078E780 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		82E58A6C1BE8FF250078E780 /* SIPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPreviewView.h; sourceTree = "<group>"; };
 		82E58A6D1BE8FF250078E780 /* SIPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPreviewView.m; sourceTree = "<group>"; };
@@ -143,6 +164,19 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		82DB5C9F1C11A1D600DDC8B0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				82DB5CA01C11A1E000DDC8B0 /* didot.ttf */,
+				82DB5CA11C11A1E000DDC8B0 /* Montserrat-Black.otf */,
+				82DB5CA21C11A1E000DDC8B0 /* Montserrat-Bold.otf */,
+				82DB5CA31C11A1E000DDC8B0 /* Montserrat-Hairline.otf */,
+				82DB5CA41C11A1E000DDC8B0 /* Montserrat-Light.otf */,
+				82DB5CA51C11A1E000DDC8B0 /* Montserrat-Regular.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		82F2B5281BE8C63F0020AA2C = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +202,7 @@
 		82F2B5331BE8C63F0020AA2C /* Sisley */ = {
 			isa = PBXGroup;
 			children = (
+				82DB5C9F1C11A1D600DDC8B0 /* fonts */,
 				82A1FABD1BF0E47C00351AE6 /* models */,
 				82F2B5371BE8C63F0020AA2C /* AppDelegate.h */,
 				82F2B5381BE8C63F0020AA2C /* AppDelegate.m */,
@@ -175,8 +210,14 @@
 				826485CE1BEA17C400A862A7 /* CameraViewController.m */,
 				826485D01BEA434F00A862A7 /* SIFaceViewController.h */,
 				826485D11BEA434F00A862A7 /* SIFaceViewController.m */,
+				82E4890C1BF4AEF5002E3EC7 /* SIFaceView.h */,
+				82E4890D1BF4AEF5002E3EC7 /* SIFaceView.m */,
 				82E58A6A1BE8CBE50078E780 /* .gitignore */,
 				82F2B53D1BE8C63F0020AA2C /* Main.storyboard */,
+				82E489091BF4ABA1002E3EC7 /* SIHomeViewController.h */,
+				82E4890A1BF4ABA1002E3EC7 /* SIHomeViewController.m */,
+				829AF11F1BF393F40084F860 /* SILoginViewController.h */,
+				829AF1201BF393F40084F860 /* SILoginViewController.m */,
 				82E58A6C1BE8FF250078E780 /* SIPreviewView.h */,
 				82E58A6D1BE8FF250078E780 /* SIPreviewView.m */,
 				82F2B5401BE8C63F0020AA2C /* Assets.xcassets */,
@@ -323,9 +364,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E58A6B1BE8CBE50078E780 /* .gitignore in Resources */,
+				82DB5CA61C11A1E000DDC8B0 /* didot.ttf in Resources */,
+				82DB5CA81C11A1E000DDC8B0 /* Montserrat-Bold.otf in Resources */,
+				82DB5CAB1C11A1E000DDC8B0 /* Montserrat-Regular.otf in Resources */,
 				82F2B5441BE8C63F0020AA2C /* LaunchScreen.storyboard in Resources */,
 				82F2B5411BE8C63F0020AA2C /* Assets.xcassets in Resources */,
+				82DB5CA71C11A1E000DDC8B0 /* Montserrat-Black.otf in Resources */,
+				82DB5CA91C11A1E000DDC8B0 /* Montserrat-Hairline.otf in Resources */,
 				82F2B53F1BE8C63F0020AA2C /* Main.storyboard in Resources */,
+				82DB5CAA1C11A1E000DDC8B0 /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A1FAC01BF0E4B800351AE6 /* SIFaceItem.m in Sources */,
+				82E4890E1BF4AEF5002E3EC7 /* SIFaceView.m in Sources */,
 				829AF11B1BF1ED5A0084F860 /* SINose.m in Sources */,
+				82E4890B1BF4ABA1002E3EC7 /* SIHomeViewController.m in Sources */,
 				826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */,
 				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
+				829AF1211BF393F40084F860 /* SILoginViewController.m in Sources */,
 				82F2B5361BE8C63F0020AA2C /* main.m in Sources */,
 				826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */,
 				829AF11A1BF1ED5A0084F860 /* SILip.m in Sources */,
@@ -545,7 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4585F5B8311C42163BA505F /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = Sisley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziiw.Sisley;
@@ -557,7 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81FB3235D60C34EDA69C1008 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = Sisley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziiw.Sisley;

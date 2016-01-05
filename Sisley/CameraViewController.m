@@ -27,6 +27,9 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 
 @interface CameraViewController () <AVCaptureFileOutputRecordingDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UILabel *msgLabel;
+@property (weak, nonatomic) IBOutlet UILabel *waitingLabel;
 @property (strong, nonatomic) IBOutlet SIPreviewView *previewView;
 @property (strong, nonatomic) IBOutlet UIButton *stillButton;
 @property (strong, nonatomic) IBOutlet UIButton *cameraButton;
@@ -47,10 +50,13 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 
 @implementation CameraViewController
 
+- (IBAction)backHome:(id)sender {
+    UIViewController *homeVC = [self.navigationController.viewControllers objectAtIndex:1];
+    [self.navigationController popToViewController:homeVC animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    NSLog( @"Hello");
     
     // Disable UI. The UI is enabled if and only if the session starts running.
     self.cameraButton.enabled = NO;
@@ -142,6 +148,11 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
                 
                 AVCaptureVideoPreviewLayer *previewLayer = (AVCaptureVideoPreviewLayer *)self.previewView.layer;
                 previewLayer.connection.videoOrientation = initialVideoOrientation;
+                
+                CGRect bounds=self.view.layer.bounds;
+                previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                previewLayer.bounds=bounds;
+//                previewLayer.position=CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
             } );
         }
         else {
@@ -182,12 +193,12 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
             case AVCamSetupResultCameraNotAuthorized:
             {
                 dispatch_async( dispatch_get_main_queue(), ^{
-                    NSString *message = NSLocalizedString( @"AVCam doesn't have permission to use the camera, please change privacy settings", @"Alert message when the user has denied access to the camera" );
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"AVCam" message:message preferredStyle:UIAlertControllerStyleAlert];
+                    NSString *message = NSLocalizedString( @"Héritage n'a pas accès à la caméra, veuillez autoriser l'application dans les réglages", @"Alert message when the user has denied access to the camera" );
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Héritage" message:message preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString( @"OK", @"Alert OK button" ) style:UIAlertActionStyleCancel handler:nil];
                     [alertController addAction:cancelAction];
                     // Provide quick access to Settings.
-                    UIAlertAction *settingsAction = [UIAlertAction actionWithTitle:NSLocalizedString( @"Settings", @"Alert button to open Settings" ) style:UIAlertActionStyleDefault handler:^( UIAlertAction *action ) {
+                    UIAlertAction *settingsAction = [UIAlertAction actionWithTitle:NSLocalizedString( @"Réglages", @"Alert button to open Settings" ) style:UIAlertActionStyleDefault handler:^( UIAlertAction *action ) {
                         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
                     }];
                     [alertController addAction:settingsAction];
@@ -198,8 +209,8 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
             case AVCamSetupResultSessionConfigurationFailed:
             {
                 dispatch_async( dispatch_get_main_queue(), ^{
-                    NSString *message = NSLocalizedString( @"Unable to capture media", @"Alert message when something goes wrong during capture session configuration" );
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"AVCam" message:message preferredStyle:UIAlertControllerStyleAlert];
+                    NSString *message = NSLocalizedString( @"Impossible de capturer la photo", @"Alert message when something goes wrong during capture session configuration" );
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Héritage" message:message preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString( @"OK", @"Alert OK button" ) style:UIAlertActionStyleCancel handler:nil];
                     [alertController addAction:cancelAction];
                     [self presentViewController:alertController animated:YES completion:nil];
@@ -292,7 +303,6 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
         dispatch_async( dispatch_get_main_queue(), ^{
             // Only enable the ability to change camera if the device has more than one camera.
             self.cameraButton.enabled = isSessionRunning && ( [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo].count > 1 );
-//            self.recordButton.enabled = isSessionRunning;
             self.stillButton.enabled = isSessionRunning;
         } );
     }
@@ -399,7 +409,6 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 - (IBAction)changeCamera:(id)sender
 {
     self.cameraButton.enabled = NO;
-//    self.recordButton.enabled = NO;
     self.stillButton.enabled = NO;
     
     dispatch_async( self.sessionQueue, ^{
@@ -448,7 +457,6 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
         
         dispatch_async( dispatch_get_main_queue(), ^{
             self.cameraButton.enabled = YES;
-//            self.recordButton.enabled = YES;
             self.stillButton.enabled = YES;
         } );
     } );
@@ -456,6 +464,12 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 
 - (IBAction)snapStillImage:(id)sender
 {
+    [UIView animateWithDuration:0.5f delay:0.0 options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.loadingView.alpha = 1.0f;
+                     }
+                     completion:nil];
+    
     dispatch_async( self.sessionQueue, ^{
         AVCaptureConnection *connection = [self.stillImageOutput connectionWithMediaType:AVMediaTypeVideo];
         AVCaptureVideoPreviewLayer *previewLayer = (AVCaptureVideoPreviewLayer *)self.previewView.layer;
@@ -488,16 +502,30 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
                 [manager POST:@"https://api.kairos.com/detect" parameters:parameters success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
 //                    NSLog(@"JSON: %@", responseObject);
                     
-                    SIFaceViewController *faceVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FaceViewController"];
+                    SIFaceViewController *faceVC = [self.storyboard instantiateViewControllerWithIdentifier:@"faceVC"];
                     faceVC.imageString = imageString;
                     faceVC.faceData = responseObject;
+                    self.loadingView.alpha = 0.0f;
                     [self.navigationController pushViewController:faceVC animated:YES];
                     
                     
                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     NSLog(@"Error: %@", error);
+                    
+                    self.msgLabel.text = @"Aucun visage trouvée";
+                    self.waitingLabel.text = @"Recommencez !";
+                    
+                    [UIView animateWithDuration:0.5f delay:1.5 options: UIViewAnimationOptionCurveEaseInOut
+                                     animations:^{
+                                         self.loadingView.alpha = 0.0f;
+                                     }
+                                     completion:^(BOOL finished) {
+                                         self.msgLabel.text = @"Analyse de la photo en cours...";
+                                         self.waitingLabel.text = @"";
+                                     }];
                 }];
                 
+                // Save photo to library
 //                [PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 //                    if ( status == PHAuthorizationStatusAuthorized ) {
 //                        // To preserve the metadata, we create an asset from the JPEG NSData representation.

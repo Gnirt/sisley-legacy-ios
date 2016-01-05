@@ -19,5 +19,6 @@
 @property (nonatomic) CGPoint browLeft;
 @property (nonatomic) CGPoint browMiddle;
 @property (nonatomic) CGPoint browRight;
+@property (nonatomic) BOOL isLeft;
 
 @end
