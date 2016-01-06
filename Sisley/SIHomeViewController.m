@@ -7,16 +7,10 @@
 //
 
 #import "SIHomeViewController.h"
+#import "CameraViewController.h"
+#import "BumpViewController.h"
 
 @interface SIHomeViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *nameMotherLabel;
-@property (weak, nonatomic) IBOutlet UILabel *motherSubLabel;
-@property (weak, nonatomic) IBOutlet UILabel *nameKidLabel;
-@property (weak, nonatomic) IBOutlet UILabel *kidSubLabel;
-@property (weak, nonatomic) IBOutlet UIView *overlay;
-@property (weak, nonatomic) IBOutlet UIView *titleView;
-@property (weak, nonatomic) IBOutlet UILabel *textOneLabel;
-@property (weak, nonatomic) IBOutlet UILabel *textTwoLabel;
 
 @end
 
@@ -28,6 +22,18 @@
     
     [self.nameMotherLabel setFont:[UIFont fontWithName:@"didot" size:28]];
     [self.motherSubLabel setFont:[UIFont fontWithName:@"Montserrat-Light" size:12]];
+    
+    self.bump = YES;
+    if(self.bump){
+        self.overlay.alpha = 1.0f;
+        self.bumpImageView.alpha = 1.0f;
+        self.titleView.alpha = 0.0f;
+        self.textOneLabel.alpha = 0.0f;
+        [self.textTwoLabel setText:@"Merci d’avoir testé les produits ! \nBump ton téléphone avec celui de ta mère pour continuer l’expérience."];
+        
+        [self.homeLinkImage setImage:[UIImage imageNamed:@"home-link-2"]];
+        [self.btnNext.imageView setImage: [UIImage imageNamed:@"home-bump"]];
+    }
 }
 
 - (IBAction)validTuto:(id)sender {
@@ -36,6 +42,18 @@
                          self.overlay.alpha = 0.0f;
                      }
                      completion:nil];
+}
+- (IBAction)btnNext:(id)sender {
+    if(!self.bump){
+        // Go to cam
+        CameraViewController *camVC = [self.storyboard instantiateViewControllerWithIdentifier:@"cameraVC"];
+        [self.navigationController pushViewController:camVC animated:YES];
+        
+    }else{
+        // Go to bump
+        BumpViewController *bumpVC = [self.storyboard instantiateViewControllerWithIdentifier:@"bumpVC"];
+        [self.navigationController pushViewController:bumpVC animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

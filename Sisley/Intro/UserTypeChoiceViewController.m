@@ -38,9 +38,13 @@
 - (IBAction)goToMom:(id)sender {
     // TO DO CHANGE TO MOM PART
     NSLog(@"yolo");
-    MomLoginViewController *momVC = [[MomLoginViewController alloc] init];
-    [self.navigationController pushViewController:momVC animated:YES];
-//    [self.navigationController performSegueWithIdentifier:@"goMom" sender:nil];
+    [self dismissViewControllerAnimated:YES completion:^(void){
+        MomLoginViewController *momVC = [[MomLoginViewController alloc] init];
+        [self.navigationController pushViewController:momVC animated:YES];
+    }];
+
+//    MomLoginViewController *momVC = [[MomLoginViewController alloc] initWithNibName:nil bundle:nil];
+//    [self presentViewController:momVC animated:YES completion:nil];
 }
 
 - (IBAction)goToDaughter:(id)sender {

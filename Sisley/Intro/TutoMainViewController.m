@@ -73,7 +73,7 @@
     
     if (index == 5) {
         UserTypeChoiceViewController *UserTypeChoice = [[UserTypeChoiceViewController alloc] initWithNibName:nil bundle:nil];
-        [self presentViewController:UserTypeChoice animated:YES completion:nil];
+        [self.navigationController presentViewController:UserTypeChoice animated:YES completion:nil];
     }
     
     return [self viewControllerAtIndex:index];

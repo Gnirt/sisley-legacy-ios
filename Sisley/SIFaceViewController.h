@@ -30,5 +30,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *yeuxBtn;
 @property (weak, nonatomic) IBOutlet UIButton *prevBtn;
 @property (weak, nonatomic) IBOutlet UIButton *nextBtn;
+@property (weak, nonatomic) IBOutlet UIButton *crossOverlay;
+@property (weak, nonatomic) IBOutlet UIButton *checkOverlay;
+@property (weak, nonatomic) IBOutlet UIButton *closeOverlay;
+@property (weak, nonatomic) IBOutlet UIButton *validBtn;
+@property (weak, nonatomic) IBOutlet UIButton *photoBtn;
 
 @end

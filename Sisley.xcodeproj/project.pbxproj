@@ -7,49 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8246372F1C3C54C100BBF985 /* bg-intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8246372E1C3C54C100BBF985 /* bg-intro.mp4 */; };
 		826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485CE1BEA17C400A862A7 /* CameraViewController.m */; };
 		826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485D11BEA434F00A862A7 /* SIFaceViewController.m */; };
-		8293A3401C3C189400DE9E09 /* TutoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3391C3C189400DE9E09 /* TutoMainViewController.m */; };
-		8293A3411C3C189400DE9E09 /* TutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A33B1C3C189400DE9E09 /* TutoViewController.m */; };
-		8293A3421C3C189400DE9E09 /* TutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A33C1C3C189400DE9E09 /* TutoViewController.xib */; };
-		8293A3431C3C189400DE9E09 /* UserTypeChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A33E1C3C189400DE9E09 /* UserTypeChoiceViewController.m */; };
-		8293A3441C3C189400DE9E09 /* UserTypeChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A33F1C3C189400DE9E09 /* UserTypeChoiceViewController.xib */; };
-		8293A37A1C3C220200DE9E09 /* DaughterComplexionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3471C3C220200DE9E09 /* DaughterComplexionPickerViewController.m */; };
-		8293A37B1C3C220200DE9E09 /* DaughterComplexionPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3481C3C220200DE9E09 /* DaughterComplexionPickerViewController.xib */; };
-		8293A37C1C3C220200DE9E09 /* DaughterEyesPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A34A1C3C220200DE9E09 /* DaughterEyesPickerViewController.m */; };
-		8293A37D1C3C220200DE9E09 /* DaughterEyesPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A34B1C3C220200DE9E09 /* DaughterEyesPickerViewController.xib */; };
-		8293A37E1C3C220200DE9E09 /* DaughterHairPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A34D1C3C220200DE9E09 /* DaughterHairPickViewController.m */; };
-		8293A37F1C3C220200DE9E09 /* DaughterHairPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A34E1C3C220200DE9E09 /* DaughterHairPickViewController.xib */; };
-		8293A3801C3C220200DE9E09 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3501C3C220200DE9E09 /* iCarousel.m */; };
-		8293A3811C3C220200DE9E09 /* JumelerWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3521C3C220200DE9E09 /* JumelerWelcomeViewController.m */; };
-		8293A3821C3C220200DE9E09 /* JumelerWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3531C3C220200DE9E09 /* JumelerWelcomeViewController.xib */; };
-		8293A3831C3C220200DE9E09 /* MomHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3551C3C220200DE9E09 /* MomHomeViewController.m */; };
-		8293A3841C3C220200DE9E09 /* MomHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3561C3C220200DE9E09 /* MomHomeViewController.xib */; };
-		8293A3851C3C220200DE9E09 /* MomLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3581C3C220200DE9E09 /* MomLoginViewController.m */; };
-		8293A3861C3C220200DE9E09 /* MomPostSendInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A35A1C3C220200DE9E09 /* MomPostSendInvitationViewController.m */; };
-		8293A3871C3C220200DE9E09 /* MomPostSendInvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A35B1C3C220200DE9E09 /* MomPostSendInvitationViewController.xib */; };
-		8293A3881C3C220200DE9E09 /* MomRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A35D1C3C220200DE9E09 /* MomRegistrationViewController.m */; };
-		8293A3891C3C220200DE9E09 /* MomRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A35E1C3C220200DE9E09 /* MomRegistrationViewController.xib */; };
-		8293A38A1C3C220200DE9E09 /* MomSelectionProductEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3601C3C220200DE9E09 /* MomSelectionProductEndViewController.m */; };
-		8293A38B1C3C220200DE9E09 /* MomSelectionProductEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3611C3C220200DE9E09 /* MomSelectionProductEndViewController.xib */; };
-		8293A38C1C3C220200DE9E09 /* MomSelectionProductPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3631C3C220200DE9E09 /* MomSelectionProductPreviewViewController.m */; };
-		8293A38D1C3C220200DE9E09 /* MomSelectionProductPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3641C3C220200DE9E09 /* MomSelectionProductPreviewViewController.xib */; };
-		8293A38E1C3C220200DE9E09 /* MomSelectionProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3661C3C220200DE9E09 /* MomSelectionProductViewController.m */; };
-		8293A38F1C3C220200DE9E09 /* MomSelectionProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3671C3C220200DE9E09 /* MomSelectionProductViewController.xib */; };
-		8293A3901C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3691C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.m */; };
-		8293A3911C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A36A1C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.xib */; };
-		8293A3921C3C220200DE9E09 /* MomSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A36C1C3C220200DE9E09 /* MomSelectionViewController.m */; };
-		8293A3931C3C220200DE9E09 /* MomSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A36D1C3C220200DE9E09 /* MomSelectionViewController.xib */; };
-		8293A3941C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A36F1C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */; };
-		8293A3951C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3701C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */; };
-		8293A3961C3C220200DE9E09 /* MomSendDaughterInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3721C3C220200DE9E09 /* MomSendDaughterInvitationViewController.m */; };
-		8293A3971C3C220200DE9E09 /* MomSendDaughterInvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3731C3C220200DE9E09 /* MomSendDaughterInvitationViewController.xib */; };
-		8293A3981C3C220200DE9E09 /* WelcomeMomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3751C3C220200DE9E09 /* WelcomeMomViewController.m */; };
-		8293A3991C3C220200DE9E09 /* WelcomeMomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3761C3C220200DE9E09 /* WelcomeMomViewController.xib */; };
-		8293A39A1C3C220200DE9E09 /* WelcomeProductSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3781C3C220200DE9E09 /* WelcomeProductSelectionViewController.m */; };
-		8293A39B1C3C220200DE9E09 /* WelcomeProductSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3791C3C220200DE9E09 /* WelcomeProductSelectionViewController.xib */; };
-		8293A39F1C3C238E00DE9E09 /* MomAddDaughterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A39D1C3C238E00DE9E09 /* MomAddDaughterViewController.m */; };
-		8293A3A01C3C238E00DE9E09 /* MomAddDaughterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A39E1C3C238E00DE9E09 /* MomAddDaughterViewController.xib */; };
+		8282BACF1C3D57AF009CAFE8 /* BumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8282BACE1C3D57AF009CAFE8 /* BumpViewController.m */; };
+		8293A3A91C3C355B00DE9E09 /* TutoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3A21C3C355B00DE9E09 /* TutoMainViewController.m */; };
+		8293A3AA1C3C355B00DE9E09 /* TutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3A41C3C355B00DE9E09 /* TutoViewController.m */; };
+		8293A3AB1C3C355B00DE9E09 /* TutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3A51C3C355B00DE9E09 /* TutoViewController.xib */; };
+		8293A3AC1C3C355B00DE9E09 /* UserTypeChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3A71C3C355B00DE9E09 /* UserTypeChoiceViewController.m */; };
+		8293A3AD1C3C355B00DE9E09 /* UserTypeChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3A81C3C355B00DE9E09 /* UserTypeChoiceViewController.xib */; };
+		8293A3E51C3C358000DE9E09 /* DaughterComplexionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3AF1C3C358000DE9E09 /* DaughterComplexionPickerViewController.m */; };
+		8293A3E61C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3B01C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib */; };
+		8293A3E71C3C358000DE9E09 /* DaughterEyesPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3B21C3C358000DE9E09 /* DaughterEyesPickerViewController.m */; };
+		8293A3E81C3C358000DE9E09 /* DaughterEyesPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3B31C3C358000DE9E09 /* DaughterEyesPickerViewController.xib */; };
+		8293A3E91C3C358000DE9E09 /* DaughterHairPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3B51C3C358000DE9E09 /* DaughterHairPickViewController.m */; };
+		8293A3EA1C3C358000DE9E09 /* DaughterHairPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3B61C3C358000DE9E09 /* DaughterHairPickViewController.xib */; };
+		8293A3EB1C3C358000DE9E09 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3B81C3C358000DE9E09 /* iCarousel.m */; };
+		8293A3EC1C3C358000DE9E09 /* JumelerWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3BA1C3C358000DE9E09 /* JumelerWelcomeViewController.m */; };
+		8293A3ED1C3C358000DE9E09 /* JumelerWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3BB1C3C358000DE9E09 /* JumelerWelcomeViewController.xib */; };
+		8293A3EE1C3C358000DE9E09 /* MomAddDaughterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3BD1C3C358000DE9E09 /* MomAddDaughterViewController.m */; };
+		8293A3EF1C3C358000DE9E09 /* MomAddDaughterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3BE1C3C358000DE9E09 /* MomAddDaughterViewController.xib */; };
+		8293A3F01C3C358000DE9E09 /* MomHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3C01C3C358000DE9E09 /* MomHomeViewController.m */; };
+		8293A3F11C3C358000DE9E09 /* MomHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3C11C3C358000DE9E09 /* MomHomeViewController.xib */; };
+		8293A3F21C3C358000DE9E09 /* MomLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3C31C3C358000DE9E09 /* MomLoginViewController.m */; };
+		8293A3F31C3C358000DE9E09 /* MomPostSendInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3C51C3C358000DE9E09 /* MomPostSendInvitationViewController.m */; };
+		8293A3F41C3C358000DE9E09 /* MomPostSendInvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3C61C3C358000DE9E09 /* MomPostSendInvitationViewController.xib */; };
+		8293A3F51C3C358000DE9E09 /* MomRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3C81C3C358000DE9E09 /* MomRegistrationViewController.m */; };
+		8293A3F61C3C358000DE9E09 /* MomRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3C91C3C358000DE9E09 /* MomRegistrationViewController.xib */; };
+		8293A3F71C3C358000DE9E09 /* MomSelectionProductEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3CB1C3C358000DE9E09 /* MomSelectionProductEndViewController.m */; };
+		8293A3F81C3C358000DE9E09 /* MomSelectionProductEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3CC1C3C358000DE9E09 /* MomSelectionProductEndViewController.xib */; };
+		8293A3F91C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3CE1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m */; };
+		8293A3FA1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3CF1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib */; };
+		8293A3FB1C3C358000DE9E09 /* MomSelectionProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3D11C3C358000DE9E09 /* MomSelectionProductViewController.m */; };
+		8293A3FC1C3C358000DE9E09 /* MomSelectionProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3D21C3C358000DE9E09 /* MomSelectionProductViewController.xib */; };
+		8293A3FD1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3D41C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m */; };
+		8293A3FE1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3D51C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib */; };
+		8293A3FF1C3C358000DE9E09 /* MomSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3D71C3C358000DE9E09 /* MomSelectionViewController.m */; };
+		8293A4001C3C358000DE9E09 /* MomSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3D81C3C358000DE9E09 /* MomSelectionViewController.xib */; };
+		8293A4011C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3DA1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */; };
+		8293A4021C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3DB1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */; };
+		8293A4031C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3DD1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m */; };
+		8293A4041C3C358000DE9E09 /* MomSendDaughterInvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3DE1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.xib */; };
+		8293A4051C3C358000DE9E09 /* WelcomeMomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3E01C3C358000DE9E09 /* WelcomeMomViewController.m */; };
+		8293A4061C3C358000DE9E09 /* WelcomeMomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3E11C3C358000DE9E09 /* WelcomeMomViewController.xib */; };
+		8293A4071C3C358000DE9E09 /* WelcomeProductSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3E31C3C358000DE9E09 /* WelcomeProductSelectionViewController.m */; };
+		8293A4081C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3E41C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib */; };
+		8293A40E1C3C35F500DE9E09 /* SITutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A40D1C3C35F500DE9E09 /* SITutoViewController.m */; };
 		829AF1191BF1ED5A0084F860 /* SIEye.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1121BF1ED5A0084F860 /* SIEye.m */; };
 		829AF11A1BF1ED5A0084F860 /* SILip.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1141BF1ED5A0084F860 /* SILip.m */; };
 		829AF11B1BF1ED5A0084F860 /* SINose.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AF1161BF1ED5A0084F860 /* SINose.m */; };
@@ -95,73 +98,78 @@
 /* Begin PBXFileReference section */
 		50C3B70D0F7B5768F2CF4EA1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FB3235D60C34EDA69C1008 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8246372E1C3C54C100BBF985 /* bg-intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "bg-intro.mp4"; path = "ressources/bg-intro.mp4"; sourceTree = "<group>"; };
 		826485CD1BEA17C400A862A7 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		826485CE1BEA17C400A862A7 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		826485D01BEA434F00A862A7 /* SIFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFaceViewController.h; sourceTree = "<group>"; };
 		826485D11BEA434F00A862A7 /* SIFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFaceViewController.m; sourceTree = "<group>"; };
-		8293A3381C3C189400DE9E09 /* TutoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutoMainViewController.h; sourceTree = "<group>"; };
-		8293A3391C3C189400DE9E09 /* TutoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutoMainViewController.m; sourceTree = "<group>"; };
-		8293A33A1C3C189400DE9E09 /* TutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutoViewController.h; sourceTree = "<group>"; };
-		8293A33B1C3C189400DE9E09 /* TutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutoViewController.m; sourceTree = "<group>"; };
-		8293A33C1C3C189400DE9E09 /* TutoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutoViewController.xib; sourceTree = "<group>"; };
-		8293A33D1C3C189400DE9E09 /* UserTypeChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTypeChoiceViewController.h; sourceTree = "<group>"; };
-		8293A33E1C3C189400DE9E09 /* UserTypeChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTypeChoiceViewController.m; sourceTree = "<group>"; };
-		8293A33F1C3C189400DE9E09 /* UserTypeChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeChoiceViewController.xib; sourceTree = "<group>"; };
-		8293A3461C3C220200DE9E09 /* DaughterComplexionPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaughterComplexionPickerViewController.h; sourceTree = "<group>"; };
-		8293A3471C3C220200DE9E09 /* DaughterComplexionPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaughterComplexionPickerViewController.m; sourceTree = "<group>"; };
-		8293A3481C3C220200DE9E09 /* DaughterComplexionPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaughterComplexionPickerViewController.xib; sourceTree = "<group>"; };
-		8293A3491C3C220200DE9E09 /* DaughterEyesPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaughterEyesPickerViewController.h; sourceTree = "<group>"; };
-		8293A34A1C3C220200DE9E09 /* DaughterEyesPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaughterEyesPickerViewController.m; sourceTree = "<group>"; };
-		8293A34B1C3C220200DE9E09 /* DaughterEyesPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaughterEyesPickerViewController.xib; sourceTree = "<group>"; };
-		8293A34C1C3C220200DE9E09 /* DaughterHairPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaughterHairPickViewController.h; sourceTree = "<group>"; };
-		8293A34D1C3C220200DE9E09 /* DaughterHairPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaughterHairPickViewController.m; sourceTree = "<group>"; };
-		8293A34E1C3C220200DE9E09 /* DaughterHairPickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaughterHairPickViewController.xib; sourceTree = "<group>"; };
-		8293A34F1C3C220200DE9E09 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		8293A3501C3C220200DE9E09 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		8293A3511C3C220200DE9E09 /* JumelerWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumelerWelcomeViewController.h; sourceTree = "<group>"; };
-		8293A3521C3C220200DE9E09 /* JumelerWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumelerWelcomeViewController.m; sourceTree = "<group>"; };
-		8293A3531C3C220200DE9E09 /* JumelerWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JumelerWelcomeViewController.xib; sourceTree = "<group>"; };
-		8293A3541C3C220200DE9E09 /* MomHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomHomeViewController.h; sourceTree = "<group>"; };
-		8293A3551C3C220200DE9E09 /* MomHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomHomeViewController.m; sourceTree = "<group>"; };
-		8293A3561C3C220200DE9E09 /* MomHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomHomeViewController.xib; sourceTree = "<group>"; };
-		8293A3571C3C220200DE9E09 /* MomLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomLoginViewController.h; sourceTree = "<group>"; };
-		8293A3581C3C220200DE9E09 /* MomLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomLoginViewController.m; sourceTree = "<group>"; };
-		8293A3591C3C220200DE9E09 /* MomPostSendInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomPostSendInvitationViewController.h; sourceTree = "<group>"; };
-		8293A35A1C3C220200DE9E09 /* MomPostSendInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomPostSendInvitationViewController.m; sourceTree = "<group>"; };
-		8293A35B1C3C220200DE9E09 /* MomPostSendInvitationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomPostSendInvitationViewController.xib; sourceTree = "<group>"; };
-		8293A35C1C3C220200DE9E09 /* MomRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomRegistrationViewController.h; sourceTree = "<group>"; };
-		8293A35D1C3C220200DE9E09 /* MomRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomRegistrationViewController.m; sourceTree = "<group>"; };
-		8293A35E1C3C220200DE9E09 /* MomRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomRegistrationViewController.xib; sourceTree = "<group>"; };
-		8293A35F1C3C220200DE9E09 /* MomSelectionProductEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectionProductEndViewController.h; sourceTree = "<group>"; };
-		8293A3601C3C220200DE9E09 /* MomSelectionProductEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectionProductEndViewController.m; sourceTree = "<group>"; };
-		8293A3611C3C220200DE9E09 /* MomSelectionProductEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSelectionProductEndViewController.xib; sourceTree = "<group>"; };
-		8293A3621C3C220200DE9E09 /* MomSelectionProductPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectionProductPreviewViewController.h; sourceTree = "<group>"; };
-		8293A3631C3C220200DE9E09 /* MomSelectionProductPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectionProductPreviewViewController.m; sourceTree = "<group>"; };
-		8293A3641C3C220200DE9E09 /* MomSelectionProductPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSelectionProductPreviewViewController.xib; sourceTree = "<group>"; };
-		8293A3651C3C220200DE9E09 /* MomSelectionProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectionProductViewController.h; sourceTree = "<group>"; };
-		8293A3661C3C220200DE9E09 /* MomSelectionProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectionProductViewController.m; sourceTree = "<group>"; };
-		8293A3671C3C220200DE9E09 /* MomSelectionProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSelectionProductViewController.xib; sourceTree = "<group>"; };
-		8293A3681C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectionProductWelcomeViewController.h; sourceTree = "<group>"; };
-		8293A3691C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectionProductWelcomeViewController.m; sourceTree = "<group>"; };
-		8293A36A1C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSelectionProductWelcomeViewController.xib; sourceTree = "<group>"; };
-		8293A36B1C3C220200DE9E09 /* MomSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSelectionViewController.h; sourceTree = "<group>"; };
-		8293A36C1C3C220200DE9E09 /* MomSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSelectionViewController.m; sourceTree = "<group>"; };
-		8293A36D1C3C220200DE9E09 /* MomSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSelectionViewController.xib; sourceTree = "<group>"; };
-		8293A36E1C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSendDaughterInvitationConfirmationViewController.h; sourceTree = "<group>"; };
-		8293A36F1C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSendDaughterInvitationConfirmationViewController.m; sourceTree = "<group>"; };
-		8293A3701C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSendDaughterInvitationConfirmationViewController.xib; sourceTree = "<group>"; };
-		8293A3711C3C220200DE9E09 /* MomSendDaughterInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomSendDaughterInvitationViewController.h; sourceTree = "<group>"; };
-		8293A3721C3C220200DE9E09 /* MomSendDaughterInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomSendDaughterInvitationViewController.m; sourceTree = "<group>"; };
-		8293A3731C3C220200DE9E09 /* MomSendDaughterInvitationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomSendDaughterInvitationViewController.xib; sourceTree = "<group>"; };
-		8293A3741C3C220200DE9E09 /* WelcomeMomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeMomViewController.h; sourceTree = "<group>"; };
-		8293A3751C3C220200DE9E09 /* WelcomeMomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeMomViewController.m; sourceTree = "<group>"; };
-		8293A3761C3C220200DE9E09 /* WelcomeMomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeMomViewController.xib; sourceTree = "<group>"; };
-		8293A3771C3C220200DE9E09 /* WelcomeProductSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeProductSelectionViewController.h; sourceTree = "<group>"; };
-		8293A3781C3C220200DE9E09 /* WelcomeProductSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeProductSelectionViewController.m; sourceTree = "<group>"; };
-		8293A3791C3C220200DE9E09 /* WelcomeProductSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeProductSelectionViewController.xib; sourceTree = "<group>"; };
-		8293A39C1C3C238E00DE9E09 /* MomAddDaughterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomAddDaughterViewController.h; sourceTree = "<group>"; };
-		8293A39D1C3C238E00DE9E09 /* MomAddDaughterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomAddDaughterViewController.m; sourceTree = "<group>"; };
-		8293A39E1C3C238E00DE9E09 /* MomAddDaughterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MomAddDaughterViewController.xib; sourceTree = "<group>"; };
+		8282BACD1C3D57AF009CAFE8 /* BumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpViewController.h; sourceTree = "<group>"; };
+		8282BACE1C3D57AF009CAFE8 /* BumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BumpViewController.m; sourceTree = "<group>"; };
+		8293A3A11C3C355B00DE9E09 /* TutoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutoMainViewController.h; path = Intro/TutoMainViewController.h; sourceTree = "<group>"; };
+		8293A3A21C3C355B00DE9E09 /* TutoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutoMainViewController.m; path = Intro/TutoMainViewController.m; sourceTree = "<group>"; };
+		8293A3A31C3C355B00DE9E09 /* TutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutoViewController.h; path = Intro/TutoViewController.h; sourceTree = "<group>"; };
+		8293A3A41C3C355B00DE9E09 /* TutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutoViewController.m; path = Intro/TutoViewController.m; sourceTree = "<group>"; };
+		8293A3A51C3C355B00DE9E09 /* TutoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TutoViewController.xib; path = Intro/TutoViewController.xib; sourceTree = "<group>"; };
+		8293A3A61C3C355B00DE9E09 /* UserTypeChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserTypeChoiceViewController.h; path = Intro/UserTypeChoiceViewController.h; sourceTree = "<group>"; };
+		8293A3A71C3C355B00DE9E09 /* UserTypeChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserTypeChoiceViewController.m; path = Intro/UserTypeChoiceViewController.m; sourceTree = "<group>"; };
+		8293A3A81C3C355B00DE9E09 /* UserTypeChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTypeChoiceViewController.xib; path = Intro/UserTypeChoiceViewController.xib; sourceTree = "<group>"; };
+		8293A3AE1C3C358000DE9E09 /* DaughterComplexionPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaughterComplexionPickerViewController.h; path = Mere/DaughterComplexionPickerViewController.h; sourceTree = "<group>"; };
+		8293A3AF1C3C358000DE9E09 /* DaughterComplexionPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DaughterComplexionPickerViewController.m; path = Mere/DaughterComplexionPickerViewController.m; sourceTree = "<group>"; };
+		8293A3B01C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DaughterComplexionPickerViewController.xib; path = Mere/DaughterComplexionPickerViewController.xib; sourceTree = "<group>"; };
+		8293A3B11C3C358000DE9E09 /* DaughterEyesPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaughterEyesPickerViewController.h; path = Mere/DaughterEyesPickerViewController.h; sourceTree = "<group>"; };
+		8293A3B21C3C358000DE9E09 /* DaughterEyesPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DaughterEyesPickerViewController.m; path = Mere/DaughterEyesPickerViewController.m; sourceTree = "<group>"; };
+		8293A3B31C3C358000DE9E09 /* DaughterEyesPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DaughterEyesPickerViewController.xib; path = Mere/DaughterEyesPickerViewController.xib; sourceTree = "<group>"; };
+		8293A3B41C3C358000DE9E09 /* DaughterHairPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaughterHairPickViewController.h; path = Mere/DaughterHairPickViewController.h; sourceTree = "<group>"; };
+		8293A3B51C3C358000DE9E09 /* DaughterHairPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DaughterHairPickViewController.m; path = Mere/DaughterHairPickViewController.m; sourceTree = "<group>"; };
+		8293A3B61C3C358000DE9E09 /* DaughterHairPickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DaughterHairPickViewController.xib; path = Mere/DaughterHairPickViewController.xib; sourceTree = "<group>"; };
+		8293A3B71C3C358000DE9E09 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = Mere/iCarousel.h; sourceTree = "<group>"; };
+		8293A3B81C3C358000DE9E09 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = Mere/iCarousel.m; sourceTree = "<group>"; };
+		8293A3B91C3C358000DE9E09 /* JumelerWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JumelerWelcomeViewController.h; path = Mere/JumelerWelcomeViewController.h; sourceTree = "<group>"; };
+		8293A3BA1C3C358000DE9E09 /* JumelerWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JumelerWelcomeViewController.m; path = Mere/JumelerWelcomeViewController.m; sourceTree = "<group>"; };
+		8293A3BB1C3C358000DE9E09 /* JumelerWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JumelerWelcomeViewController.xib; path = Mere/JumelerWelcomeViewController.xib; sourceTree = "<group>"; };
+		8293A3BC1C3C358000DE9E09 /* MomAddDaughterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomAddDaughterViewController.h; path = Mere/MomAddDaughterViewController.h; sourceTree = "<group>"; };
+		8293A3BD1C3C358000DE9E09 /* MomAddDaughterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomAddDaughterViewController.m; path = Mere/MomAddDaughterViewController.m; sourceTree = "<group>"; };
+		8293A3BE1C3C358000DE9E09 /* MomAddDaughterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomAddDaughterViewController.xib; path = Mere/MomAddDaughterViewController.xib; sourceTree = "<group>"; };
+		8293A3BF1C3C358000DE9E09 /* MomHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomHomeViewController.h; path = Mere/MomHomeViewController.h; sourceTree = "<group>"; };
+		8293A3C01C3C358000DE9E09 /* MomHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomHomeViewController.m; path = Mere/MomHomeViewController.m; sourceTree = "<group>"; };
+		8293A3C11C3C358000DE9E09 /* MomHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomHomeViewController.xib; path = Mere/MomHomeViewController.xib; sourceTree = "<group>"; };
+		8293A3C21C3C358000DE9E09 /* MomLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomLoginViewController.h; path = Mere/MomLoginViewController.h; sourceTree = "<group>"; };
+		8293A3C31C3C358000DE9E09 /* MomLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomLoginViewController.m; path = Mere/MomLoginViewController.m; sourceTree = "<group>"; };
+		8293A3C41C3C358000DE9E09 /* MomPostSendInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomPostSendInvitationViewController.h; path = Mere/MomPostSendInvitationViewController.h; sourceTree = "<group>"; };
+		8293A3C51C3C358000DE9E09 /* MomPostSendInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomPostSendInvitationViewController.m; path = Mere/MomPostSendInvitationViewController.m; sourceTree = "<group>"; };
+		8293A3C61C3C358000DE9E09 /* MomPostSendInvitationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomPostSendInvitationViewController.xib; path = Mere/MomPostSendInvitationViewController.xib; sourceTree = "<group>"; };
+		8293A3C71C3C358000DE9E09 /* MomRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomRegistrationViewController.h; path = Mere/MomRegistrationViewController.h; sourceTree = "<group>"; };
+		8293A3C81C3C358000DE9E09 /* MomRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomRegistrationViewController.m; path = Mere/MomRegistrationViewController.m; sourceTree = "<group>"; };
+		8293A3C91C3C358000DE9E09 /* MomRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomRegistrationViewController.xib; path = Mere/MomRegistrationViewController.xib; sourceTree = "<group>"; };
+		8293A3CA1C3C358000DE9E09 /* MomSelectionProductEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSelectionProductEndViewController.h; path = Mere/MomSelectionProductEndViewController.h; sourceTree = "<group>"; };
+		8293A3CB1C3C358000DE9E09 /* MomSelectionProductEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSelectionProductEndViewController.m; path = Mere/MomSelectionProductEndViewController.m; sourceTree = "<group>"; };
+		8293A3CC1C3C358000DE9E09 /* MomSelectionProductEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSelectionProductEndViewController.xib; path = Mere/MomSelectionProductEndViewController.xib; sourceTree = "<group>"; };
+		8293A3CD1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSelectionProductPreviewViewController.h; path = Mere/MomSelectionProductPreviewViewController.h; sourceTree = "<group>"; };
+		8293A3CE1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSelectionProductPreviewViewController.m; path = Mere/MomSelectionProductPreviewViewController.m; sourceTree = "<group>"; };
+		8293A3CF1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSelectionProductPreviewViewController.xib; path = Mere/MomSelectionProductPreviewViewController.xib; sourceTree = "<group>"; };
+		8293A3D01C3C358000DE9E09 /* MomSelectionProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSelectionProductViewController.h; path = Mere/MomSelectionProductViewController.h; sourceTree = "<group>"; };
+		8293A3D11C3C358000DE9E09 /* MomSelectionProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSelectionProductViewController.m; path = Mere/MomSelectionProductViewController.m; sourceTree = "<group>"; };
+		8293A3D21C3C358000DE9E09 /* MomSelectionProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSelectionProductViewController.xib; path = Mere/MomSelectionProductViewController.xib; sourceTree = "<group>"; };
+		8293A3D31C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSelectionProductWelcomeViewController.h; path = Mere/MomSelectionProductWelcomeViewController.h; sourceTree = "<group>"; };
+		8293A3D41C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSelectionProductWelcomeViewController.m; path = Mere/MomSelectionProductWelcomeViewController.m; sourceTree = "<group>"; };
+		8293A3D51C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSelectionProductWelcomeViewController.xib; path = Mere/MomSelectionProductWelcomeViewController.xib; sourceTree = "<group>"; };
+		8293A3D61C3C358000DE9E09 /* MomSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSelectionViewController.h; path = Mere/MomSelectionViewController.h; sourceTree = "<group>"; };
+		8293A3D71C3C358000DE9E09 /* MomSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSelectionViewController.m; path = Mere/MomSelectionViewController.m; sourceTree = "<group>"; };
+		8293A3D81C3C358000DE9E09 /* MomSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSelectionViewController.xib; path = Mere/MomSelectionViewController.xib; sourceTree = "<group>"; };
+		8293A3D91C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSendDaughterInvitationConfirmationViewController.h; path = Mere/MomSendDaughterInvitationConfirmationViewController.h; sourceTree = "<group>"; };
+		8293A3DA1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSendDaughterInvitationConfirmationViewController.m; path = Mere/MomSendDaughterInvitationConfirmationViewController.m; sourceTree = "<group>"; };
+		8293A3DB1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSendDaughterInvitationConfirmationViewController.xib; path = Mere/MomSendDaughterInvitationConfirmationViewController.xib; sourceTree = "<group>"; };
+		8293A3DC1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomSendDaughterInvitationViewController.h; path = Mere/MomSendDaughterInvitationViewController.h; sourceTree = "<group>"; };
+		8293A3DD1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomSendDaughterInvitationViewController.m; path = Mere/MomSendDaughterInvitationViewController.m; sourceTree = "<group>"; };
+		8293A3DE1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomSendDaughterInvitationViewController.xib; path = Mere/MomSendDaughterInvitationViewController.xib; sourceTree = "<group>"; };
+		8293A3DF1C3C358000DE9E09 /* WelcomeMomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeMomViewController.h; path = Mere/WelcomeMomViewController.h; sourceTree = "<group>"; };
+		8293A3E01C3C358000DE9E09 /* WelcomeMomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeMomViewController.m; path = Mere/WelcomeMomViewController.m; sourceTree = "<group>"; };
+		8293A3E11C3C358000DE9E09 /* WelcomeMomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeMomViewController.xib; path = Mere/WelcomeMomViewController.xib; sourceTree = "<group>"; };
+		8293A3E21C3C358000DE9E09 /* WelcomeProductSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeProductSelectionViewController.h; path = Mere/WelcomeProductSelectionViewController.h; sourceTree = "<group>"; };
+		8293A3E31C3C358000DE9E09 /* WelcomeProductSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeProductSelectionViewController.m; path = Mere/WelcomeProductSelectionViewController.m; sourceTree = "<group>"; };
+		8293A3E41C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeProductSelectionViewController.xib; path = Mere/WelcomeProductSelectionViewController.xib; sourceTree = "<group>"; };
+		8293A40C1C3C35F500DE9E09 /* SITutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SITutoViewController.h; path = Intro/SITutoViewController.h; sourceTree = "<group>"; };
+		8293A40D1C3C35F500DE9E09 /* SITutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SITutoViewController.m; path = Intro/SITutoViewController.m; sourceTree = "<group>"; };
 		829AF1111BF1ED5A0084F860 /* SIEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIEye.h; path = models/face/SIEye.h; sourceTree = "<group>"; };
 		829AF1121BF1ED5A0084F860 /* SIEye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIEye.m; path = models/face/SIEye.m; sourceTree = "<group>"; };
 		829AF1131BF1ED5A0084F860 /* SILip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SILip.h; path = models/face/SILip.h; sourceTree = "<group>"; };
@@ -245,17 +253,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8246372B1C3C546500BBF985 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				8246372E1C3C54C100BBF985 /* bg-intro.mp4 */,
+			);
+			name = ressources;
+			sourceTree = "<group>";
+		};
 		8293A3371C3C187000DE9E09 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				8293A3381C3C189400DE9E09 /* TutoMainViewController.h */,
-				8293A3391C3C189400DE9E09 /* TutoMainViewController.m */,
-				8293A33A1C3C189400DE9E09 /* TutoViewController.h */,
-				8293A33B1C3C189400DE9E09 /* TutoViewController.m */,
-				8293A33C1C3C189400DE9E09 /* TutoViewController.xib */,
-				8293A33D1C3C189400DE9E09 /* UserTypeChoiceViewController.h */,
-				8293A33E1C3C189400DE9E09 /* UserTypeChoiceViewController.m */,
-				8293A33F1C3C189400DE9E09 /* UserTypeChoiceViewController.xib */,
+				8293A3A11C3C355B00DE9E09 /* TutoMainViewController.h */,
+				8293A3A21C3C355B00DE9E09 /* TutoMainViewController.m */,
+				8293A3A31C3C355B00DE9E09 /* TutoViewController.h */,
+				8293A3A41C3C355B00DE9E09 /* TutoViewController.m */,
+				8293A3A51C3C355B00DE9E09 /* TutoViewController.xib */,
+				8293A3A61C3C355B00DE9E09 /* UserTypeChoiceViewController.h */,
+				8293A3A71C3C355B00DE9E09 /* UserTypeChoiceViewController.m */,
+				8293A3A81C3C355B00DE9E09 /* UserTypeChoiceViewController.xib */,
+				8293A40C1C3C35F500DE9E09 /* SITutoViewController.h */,
+				8293A40D1C3C35F500DE9E09 /* SITutoViewController.m */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -263,61 +281,61 @@
 		8293A3451C3C217C00DE9E09 /* Mere */ = {
 			isa = PBXGroup;
 			children = (
-				8293A3461C3C220200DE9E09 /* DaughterComplexionPickerViewController.h */,
-				8293A3471C3C220200DE9E09 /* DaughterComplexionPickerViewController.m */,
-				8293A3481C3C220200DE9E09 /* DaughterComplexionPickerViewController.xib */,
-				8293A3491C3C220200DE9E09 /* DaughterEyesPickerViewController.h */,
-				8293A34A1C3C220200DE9E09 /* DaughterEyesPickerViewController.m */,
-				8293A34B1C3C220200DE9E09 /* DaughterEyesPickerViewController.xib */,
-				8293A34C1C3C220200DE9E09 /* DaughterHairPickViewController.h */,
-				8293A34D1C3C220200DE9E09 /* DaughterHairPickViewController.m */,
-				8293A34E1C3C220200DE9E09 /* DaughterHairPickViewController.xib */,
-				8293A34F1C3C220200DE9E09 /* iCarousel.h */,
-				8293A3501C3C220200DE9E09 /* iCarousel.m */,
-				8293A3511C3C220200DE9E09 /* JumelerWelcomeViewController.h */,
-				8293A3521C3C220200DE9E09 /* JumelerWelcomeViewController.m */,
-				8293A3531C3C220200DE9E09 /* JumelerWelcomeViewController.xib */,
-				8293A39C1C3C238E00DE9E09 /* MomAddDaughterViewController.h */,
-				8293A39D1C3C238E00DE9E09 /* MomAddDaughterViewController.m */,
-				8293A39E1C3C238E00DE9E09 /* MomAddDaughterViewController.xib */,
-				8293A3541C3C220200DE9E09 /* MomHomeViewController.h */,
-				8293A3551C3C220200DE9E09 /* MomHomeViewController.m */,
-				8293A3561C3C220200DE9E09 /* MomHomeViewController.xib */,
-				8293A3571C3C220200DE9E09 /* MomLoginViewController.h */,
-				8293A3581C3C220200DE9E09 /* MomLoginViewController.m */,
-				8293A3591C3C220200DE9E09 /* MomPostSendInvitationViewController.h */,
-				8293A35A1C3C220200DE9E09 /* MomPostSendInvitationViewController.m */,
-				8293A35B1C3C220200DE9E09 /* MomPostSendInvitationViewController.xib */,
-				8293A35C1C3C220200DE9E09 /* MomRegistrationViewController.h */,
-				8293A35D1C3C220200DE9E09 /* MomRegistrationViewController.m */,
-				8293A35E1C3C220200DE9E09 /* MomRegistrationViewController.xib */,
-				8293A35F1C3C220200DE9E09 /* MomSelectionProductEndViewController.h */,
-				8293A3601C3C220200DE9E09 /* MomSelectionProductEndViewController.m */,
-				8293A3611C3C220200DE9E09 /* MomSelectionProductEndViewController.xib */,
-				8293A3621C3C220200DE9E09 /* MomSelectionProductPreviewViewController.h */,
-				8293A3631C3C220200DE9E09 /* MomSelectionProductPreviewViewController.m */,
-				8293A3641C3C220200DE9E09 /* MomSelectionProductPreviewViewController.xib */,
-				8293A3651C3C220200DE9E09 /* MomSelectionProductViewController.h */,
-				8293A3661C3C220200DE9E09 /* MomSelectionProductViewController.m */,
-				8293A3671C3C220200DE9E09 /* MomSelectionProductViewController.xib */,
-				8293A3681C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.h */,
-				8293A3691C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.m */,
-				8293A36A1C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.xib */,
-				8293A36B1C3C220200DE9E09 /* MomSelectionViewController.h */,
-				8293A36C1C3C220200DE9E09 /* MomSelectionViewController.m */,
-				8293A36D1C3C220200DE9E09 /* MomSelectionViewController.xib */,
-				8293A36E1C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.h */,
-				8293A36F1C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */,
-				8293A3701C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */,
-				8293A3711C3C220200DE9E09 /* MomSendDaughterInvitationViewController.h */,
-				8293A3721C3C220200DE9E09 /* MomSendDaughterInvitationViewController.m */,
-				8293A3731C3C220200DE9E09 /* MomSendDaughterInvitationViewController.xib */,
-				8293A3741C3C220200DE9E09 /* WelcomeMomViewController.h */,
-				8293A3751C3C220200DE9E09 /* WelcomeMomViewController.m */,
-				8293A3761C3C220200DE9E09 /* WelcomeMomViewController.xib */,
-				8293A3771C3C220200DE9E09 /* WelcomeProductSelectionViewController.h */,
-				8293A3781C3C220200DE9E09 /* WelcomeProductSelectionViewController.m */,
-				8293A3791C3C220200DE9E09 /* WelcomeProductSelectionViewController.xib */,
+				8293A3AE1C3C358000DE9E09 /* DaughterComplexionPickerViewController.h */,
+				8293A3AF1C3C358000DE9E09 /* DaughterComplexionPickerViewController.m */,
+				8293A3B01C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib */,
+				8293A3B11C3C358000DE9E09 /* DaughterEyesPickerViewController.h */,
+				8293A3B21C3C358000DE9E09 /* DaughterEyesPickerViewController.m */,
+				8293A3B31C3C358000DE9E09 /* DaughterEyesPickerViewController.xib */,
+				8293A3B41C3C358000DE9E09 /* DaughterHairPickViewController.h */,
+				8293A3B51C3C358000DE9E09 /* DaughterHairPickViewController.m */,
+				8293A3B61C3C358000DE9E09 /* DaughterHairPickViewController.xib */,
+				8293A3B71C3C358000DE9E09 /* iCarousel.h */,
+				8293A3B81C3C358000DE9E09 /* iCarousel.m */,
+				8293A3B91C3C358000DE9E09 /* JumelerWelcomeViewController.h */,
+				8293A3BA1C3C358000DE9E09 /* JumelerWelcomeViewController.m */,
+				8293A3BB1C3C358000DE9E09 /* JumelerWelcomeViewController.xib */,
+				8293A3BC1C3C358000DE9E09 /* MomAddDaughterViewController.h */,
+				8293A3BD1C3C358000DE9E09 /* MomAddDaughterViewController.m */,
+				8293A3BE1C3C358000DE9E09 /* MomAddDaughterViewController.xib */,
+				8293A3BF1C3C358000DE9E09 /* MomHomeViewController.h */,
+				8293A3C01C3C358000DE9E09 /* MomHomeViewController.m */,
+				8293A3C11C3C358000DE9E09 /* MomHomeViewController.xib */,
+				8293A3C21C3C358000DE9E09 /* MomLoginViewController.h */,
+				8293A3C31C3C358000DE9E09 /* MomLoginViewController.m */,
+				8293A3C41C3C358000DE9E09 /* MomPostSendInvitationViewController.h */,
+				8293A3C51C3C358000DE9E09 /* MomPostSendInvitationViewController.m */,
+				8293A3C61C3C358000DE9E09 /* MomPostSendInvitationViewController.xib */,
+				8293A3C71C3C358000DE9E09 /* MomRegistrationViewController.h */,
+				8293A3C81C3C358000DE9E09 /* MomRegistrationViewController.m */,
+				8293A3C91C3C358000DE9E09 /* MomRegistrationViewController.xib */,
+				8293A3CA1C3C358000DE9E09 /* MomSelectionProductEndViewController.h */,
+				8293A3CB1C3C358000DE9E09 /* MomSelectionProductEndViewController.m */,
+				8293A3CC1C3C358000DE9E09 /* MomSelectionProductEndViewController.xib */,
+				8293A3CD1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.h */,
+				8293A3CE1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m */,
+				8293A3CF1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib */,
+				8293A3D01C3C358000DE9E09 /* MomSelectionProductViewController.h */,
+				8293A3D11C3C358000DE9E09 /* MomSelectionProductViewController.m */,
+				8293A3D21C3C358000DE9E09 /* MomSelectionProductViewController.xib */,
+				8293A3D31C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.h */,
+				8293A3D41C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m */,
+				8293A3D51C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib */,
+				8293A3D61C3C358000DE9E09 /* MomSelectionViewController.h */,
+				8293A3D71C3C358000DE9E09 /* MomSelectionViewController.m */,
+				8293A3D81C3C358000DE9E09 /* MomSelectionViewController.xib */,
+				8293A3D91C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.h */,
+				8293A3DA1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m */,
+				8293A3DB1C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib */,
+				8293A3DC1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.h */,
+				8293A3DD1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m */,
+				8293A3DE1C3C358000DE9E09 /* MomSendDaughterInvitationViewController.xib */,
+				8293A3DF1C3C358000DE9E09 /* WelcomeMomViewController.h */,
+				8293A3E01C3C358000DE9E09 /* WelcomeMomViewController.m */,
+				8293A3E11C3C358000DE9E09 /* WelcomeMomViewController.xib */,
+				8293A3E21C3C358000DE9E09 /* WelcomeProductSelectionViewController.h */,
+				8293A3E31C3C358000DE9E09 /* WelcomeProductSelectionViewController.m */,
+				8293A3E41C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib */,
 			);
 			name = Mere;
 			sourceTree = "<group>";
@@ -383,6 +401,7 @@
 		82F2B5331BE8C63F0020AA2C /* Sisley */ = {
 			isa = PBXGroup;
 			children = (
+				8246372B1C3C546500BBF985 /* ressources */,
 				8293A3451C3C217C00DE9E09 /* Mere */,
 				8293A3371C3C187000DE9E09 /* Intro */,
 				82DB5C9F1C11A1D600DDC8B0 /* fonts */,
@@ -404,6 +423,8 @@
 				82E58A6C1BE8FF250078E780 /* SIPreviewView.h */,
 				82E58A6D1BE8FF250078E780 /* SIPreviewView.m */,
 				82F2B5401BE8C63F0020AA2C /* Assets.xcassets */,
+				8282BACD1C3D57AF009CAFE8 /* BumpViewController.h */,
+				8282BACE1C3D57AF009CAFE8 /* BumpViewController.m */,
 				82F2B5421BE8C63F0020AA2C /* LaunchScreen.storyboard */,
 				82F2B5451BE8C63F0020AA2C /* Info.plist */,
 				82F2B5341BE8C63F0020AA2C /* Supporting Files */,
@@ -546,35 +567,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8293A3821C3C220200DE9E09 /* JumelerWelcomeViewController.xib in Resources */,
-				8293A3951C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib in Resources */,
+				8293A3ED1C3C358000DE9E09 /* JumelerWelcomeViewController.xib in Resources */,
 				82E58A6B1BE8CBE50078E780 /* .gitignore in Resources */,
-				8293A3891C3C220200DE9E09 /* MomRegistrationViewController.xib in Resources */,
-				8293A38D1C3C220200DE9E09 /* MomSelectionProductPreviewViewController.xib in Resources */,
 				82DB5CA61C11A1E000DDC8B0 /* didot.ttf in Resources */,
-				8293A3931C3C220200DE9E09 /* MomSelectionViewController.xib in Resources */,
+				8293A3F61C3C358000DE9E09 /* MomRegistrationViewController.xib in Resources */,
 				82DB5CA81C11A1E000DDC8B0 /* Montserrat-Bold.otf in Resources */,
-				8293A3A01C3C238E00DE9E09 /* MomAddDaughterViewController.xib in Resources */,
-				8293A39B1C3C220200DE9E09 /* WelcomeProductSelectionViewController.xib in Resources */,
 				82DB5CAB1C11A1E000DDC8B0 /* Montserrat-Regular.otf in Resources */,
-				8293A38F1C3C220200DE9E09 /* MomSelectionProductViewController.xib in Resources */,
-				8293A37D1C3C220200DE9E09 /* DaughterEyesPickerViewController.xib in Resources */,
-				8293A3911C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.xib in Resources */,
-				8293A3841C3C220200DE9E09 /* MomHomeViewController.xib in Resources */,
-				8293A37F1C3C220200DE9E09 /* DaughterHairPickViewController.xib in Resources */,
-				8293A3421C3C189400DE9E09 /* TutoViewController.xib in Resources */,
-				8293A3871C3C220200DE9E09 /* MomPostSendInvitationViewController.xib in Resources */,
+				8293A4021C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.xib in Resources */,
+				8293A3E81C3C358000DE9E09 /* DaughterEyesPickerViewController.xib in Resources */,
+				8293A3EA1C3C358000DE9E09 /* DaughterHairPickViewController.xib in Resources */,
+				8293A3AB1C3C355B00DE9E09 /* TutoViewController.xib in Resources */,
 				82F2B5441BE8C63F0020AA2C /* LaunchScreen.storyboard in Resources */,
 				82F2B5411BE8C63F0020AA2C /* Assets.xcassets in Resources */,
+				8293A3F81C3C358000DE9E09 /* MomSelectionProductEndViewController.xib in Resources */,
+				8293A4041C3C358000DE9E09 /* MomSendDaughterInvitationViewController.xib in Resources */,
+				8293A3EF1C3C358000DE9E09 /* MomAddDaughterViewController.xib in Resources */,
 				82DB5CA71C11A1E000DDC8B0 /* Montserrat-Black.otf in Resources */,
-				8293A37B1C3C220200DE9E09 /* DaughterComplexionPickerViewController.xib in Resources */,
-				8293A3441C3C189400DE9E09 /* UserTypeChoiceViewController.xib in Resources */,
+				8293A3E61C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib in Resources */,
+				8293A3F11C3C358000DE9E09 /* MomHomeViewController.xib in Resources */,
+				8293A3FE1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib in Resources */,
+				8293A4001C3C358000DE9E09 /* MomSelectionViewController.xib in Resources */,
+				8293A3FA1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib in Resources */,
+				8246372F1C3C54C100BBF985 /* bg-intro.mp4 in Resources */,
 				82DB5CA91C11A1E000DDC8B0 /* Montserrat-Hairline.otf in Resources */,
+				8293A3FC1C3C358000DE9E09 /* MomSelectionProductViewController.xib in Resources */,
 				82F2B53F1BE8C63F0020AA2C /* Main.storyboard in Resources */,
-				8293A3971C3C220200DE9E09 /* MomSendDaughterInvitationViewController.xib in Resources */,
+				8293A3AD1C3C355B00DE9E09 /* UserTypeChoiceViewController.xib in Resources */,
+				8293A4061C3C358000DE9E09 /* WelcomeMomViewController.xib in Resources */,
 				82DB5CAA1C11A1E000DDC8B0 /* Montserrat-Light.otf in Resources */,
-				8293A3991C3C220200DE9E09 /* WelcomeMomViewController.xib in Resources */,
-				8293A38B1C3C220200DE9E09 /* MomSelectionProductEndViewController.xib in Resources */,
+				8293A4081C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib in Resources */,
+				8293A3F41C3C358000DE9E09 /* MomPostSendInvitationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,39 +669,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8293A39A1C3C220200DE9E09 /* WelcomeProductSelectionViewController.m in Sources */,
-				8293A3831C3C220200DE9E09 /* MomHomeViewController.m in Sources */,
-				8293A38E1C3C220200DE9E09 /* MomSelectionProductViewController.m in Sources */,
-				8293A3921C3C220200DE9E09 /* MomSelectionViewController.m in Sources */,
-				8293A3811C3C220200DE9E09 /* JumelerWelcomeViewController.m in Sources */,
+				8293A3EC1C3C358000DE9E09 /* JumelerWelcomeViewController.m in Sources */,
 				82A1FAC01BF0E4B800351AE6 /* SIFaceItem.m in Sources */,
+				8282BACF1C3D57AF009CAFE8 /* BumpViewController.m in Sources */,
 				82E4890E1BF4AEF5002E3EC7 /* SIFaceView.m in Sources */,
-				8293A37A1C3C220200DE9E09 /* DaughterComplexionPickerViewController.m in Sources */,
-				8293A3881C3C220200DE9E09 /* MomRegistrationViewController.m in Sources */,
+				8293A3E51C3C358000DE9E09 /* DaughterComplexionPickerViewController.m in Sources */,
+				8293A3F51C3C358000DE9E09 /* MomRegistrationViewController.m in Sources */,
+				8293A3FB1C3C358000DE9E09 /* MomSelectionProductViewController.m in Sources */,
+				8293A40E1C3C35F500DE9E09 /* SITutoViewController.m in Sources */,
+				8293A3FD1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m in Sources */,
+				8293A3AC1C3C355B00DE9E09 /* UserTypeChoiceViewController.m in Sources */,
 				829AF11B1BF1ED5A0084F860 /* SINose.m in Sources */,
-				8293A3981C3C220200DE9E09 /* WelcomeMomViewController.m in Sources */,
 				82E4890B1BF4ABA1002E3EC7 /* SIHomeViewController.m in Sources */,
+				8293A3F91C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m in Sources */,
+				8293A3F21C3C358000DE9E09 /* MomLoginViewController.m in Sources */,
 				826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */,
-				8293A3431C3C189400DE9E09 /* UserTypeChoiceViewController.m in Sources */,
 				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
+				8293A3F01C3C358000DE9E09 /* MomHomeViewController.m in Sources */,
+				8293A4031C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m in Sources */,
+				8293A3A91C3C355B00DE9E09 /* TutoMainViewController.m in Sources */,
+				8293A4051C3C358000DE9E09 /* WelcomeMomViewController.m in Sources */,
 				829AF1211BF393F40084F860 /* SILoginViewController.m in Sources */,
-				8293A39F1C3C238E00DE9E09 /* MomAddDaughterViewController.m in Sources */,
-				8293A3961C3C220200DE9E09 /* MomSendDaughterInvitationViewController.m in Sources */,
-				8293A3401C3C189400DE9E09 /* TutoMainViewController.m in Sources */,
-				8293A3411C3C189400DE9E09 /* TutoViewController.m in Sources */,
-				8293A3801C3C220200DE9E09 /* iCarousel.m in Sources */,
-				8293A3901C3C220200DE9E09 /* MomSelectionProductWelcomeViewController.m in Sources */,
-				8293A3941C3C220200DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m in Sources */,
-				8293A3851C3C220200DE9E09 /* MomLoginViewController.m in Sources */,
+				8293A3F31C3C358000DE9E09 /* MomPostSendInvitationViewController.m in Sources */,
+				8293A3AA1C3C355B00DE9E09 /* TutoViewController.m in Sources */,
+				8293A3EB1C3C358000DE9E09 /* iCarousel.m in Sources */,
+				8293A3EE1C3C358000DE9E09 /* MomAddDaughterViewController.m in Sources */,
+				8293A3FF1C3C358000DE9E09 /* MomSelectionViewController.m in Sources */,
+				8293A4071C3C358000DE9E09 /* WelcomeProductSelectionViewController.m in Sources */,
 				82F2B5361BE8C63F0020AA2C /* main.m in Sources */,
-				8293A37E1C3C220200DE9E09 /* DaughterHairPickViewController.m in Sources */,
-				8293A38C1C3C220200DE9E09 /* MomSelectionProductPreviewViewController.m in Sources */,
+				8293A3F71C3C358000DE9E09 /* MomSelectionProductEndViewController.m in Sources */,
+				8293A3E91C3C358000DE9E09 /* DaughterHairPickViewController.m in Sources */,
 				826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */,
-				8293A38A1C3C220200DE9E09 /* MomSelectionProductEndViewController.m in Sources */,
-				8293A37C1C3C220200DE9E09 /* DaughterEyesPickerViewController.m in Sources */,
-				8293A3861C3C220200DE9E09 /* MomPostSendInvitationViewController.m in Sources */,
+				8293A3E71C3C358000DE9E09 /* DaughterEyesPickerViewController.m in Sources */,
 				829AF11A1BF1ED5A0084F860 /* SILip.m in Sources */,
 				82E58A6E1BE8FF250078E780 /* SIPreviewView.m in Sources */,
+				8293A4011C3C358000DE9E09 /* MomSendDaughterInvitationConfirmationViewController.m in Sources */,
 				829AF1191BF1ED5A0084F860 /* SIEye.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

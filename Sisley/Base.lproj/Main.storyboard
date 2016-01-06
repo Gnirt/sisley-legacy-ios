@@ -17,6 +17,8 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="didot.ttf">
             <string>Didot</string>
@@ -119,7 +121,7 @@ reçus dans ton invitation.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icu-hn-oNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="486"/>
+            <point key="canvasLocation" x="1644" y="-386"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Kxu-Eg-Bpm">
@@ -177,15 +179,15 @@ reçus dans ton invitation.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-Y7-0Hi">
-                                <rect key="frame" x="141" y="510" width="38" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-Y7-0Hi">
+                                <rect key="frame" x="141.5" y="510" width="38" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="aqU-wS-f7P"/>
                                     <constraint firstAttribute="width" constant="38" id="nZ7-WO-7Vx"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="loginBtnConnexion"/>
+                                <state key="normal" image="loginBtnConnexion"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2d0-yt-ZcW"/>
+                                    <action selector="btnNext:" destination="mhJ-Dh-TRC" eventType="touchUpInside" id="AxK-Sq-Rdf"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nck-WX-5N9" userLabel="overlay">
@@ -262,6 +264,13 @@ pour continuer l’expérience</string>
                                             <constraint firstItem="AQP-AU-gu8" firstAttribute="top" secondItem="IKN-WJ-HYH" secondAttribute="top" constant="20" id="x8J-Ue-G0K"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bump" translatesAutoresizingMaskIntoConstraints="NO" id="idZ-jy-W7g">
+                                        <rect key="frame" x="104" y="113" width="112.5" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="eaI-AF-LJL"/>
+                                            <constraint firstAttribute="width" constant="112.5" id="srH-p1-bhV"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.89647052304964536" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -270,6 +279,8 @@ pour continuer l’expérience</string>
                                     <constraint firstItem="bdP-n1-elx" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="HXq-YE-PcF"/>
                                     <constraint firstItem="bdP-n1-elx" firstAttribute="top" secondItem="0Gc-5K-taC" secondAttribute="bottom" constant="8" id="QkC-o1-rTN"/>
                                     <constraint firstItem="IKN-WJ-HYH" firstAttribute="top" secondItem="nck-WX-5N9" secondAttribute="top" constant="181" id="U6b-8E-4mo"/>
+                                    <constraint firstItem="idZ-jy-W7g" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="cEM-zB-cAm"/>
+                                    <constraint firstItem="idZ-jy-W7g" firstAttribute="top" secondItem="nck-WX-5N9" secondAttribute="top" constant="113" id="dPs-dC-8A7"/>
                                     <constraint firstItem="eYZ-BL-S7o" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="tdc-gl-P4t"/>
                                     <constraint firstItem="eYZ-BL-S7o" firstAttribute="top" secondItem="bdP-n1-elx" secondAttribute="bottom" constant="124" id="vBD-Gy-ftq"/>
                                     <constraint firstItem="IKN-WJ-HYH" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="ytp-ug-cJm"/>
@@ -301,6 +312,9 @@ pour continuer l’expérience</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnNext" destination="TUn-Y7-0Hi" id="GWO-0j-Qp0"/>
+                        <outlet property="bumpImageView" destination="idZ-jy-W7g" id="cnf-a2-HvR"/>
+                        <outlet property="homeLinkImage" destination="NrQ-vQ-vWx" id="1g8-a6-6xU"/>
                         <outlet property="kidSubLabel" destination="xPn-2j-Baf" id="sRS-Iu-5lL"/>
                         <outlet property="motherSubLabel" destination="EdB-ul-mn5" id="4Ln-0O-Mey"/>
                         <outlet property="nameKidLabel" destination="BlU-Gy-fcW" id="zBt-BG-9rR"/>
@@ -309,12 +323,11 @@ pour continuer l’expérience</string>
                         <outlet property="textOneLabel" destination="0Gc-5K-taC" id="HFj-66-2fh"/>
                         <outlet property="textTwoLabel" destination="bdP-n1-elx" id="yjI-ci-9h7"/>
                         <outlet property="titleView" destination="IKN-WJ-HYH" id="Vnb-UG-UkR"/>
-                        <segue destination="QhX-fD-ODM" kind="show" id="xtU-03-O5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7of-rB-2ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="486"/>
+            <point key="canvasLocation" x="2180" y="-386"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -440,25 +453,51 @@ pour continuer l’expérience</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2012" y="486"/>
+            <point key="canvasLocation" x="2972" y="-386"/>
         </scene>
         <!--Bump View Controller-->
         <scene sceneID="TB1-0Y-Cxw">
             <objects>
-                <viewController storyboardIdentifier="bumpVC" id="QhX-fD-ODM" userLabel="Bump View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bumpVC" id="QhX-fD-ODM" userLabel="Bump View Controller" customClass="BumpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lra-gs-vCS"/>
                         <viewControllerLayoutGuide type="bottom" id="aax-Mg-jm9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iq1-9k-Sxg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-zd-rYZ" userLabel="overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bump" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-NY-ckA">
+                                        <rect key="frame" x="131" y="101" width="112.5" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112.5" id="P8j-jl-1EX"/>
+                                            <constraint firstAttribute="height" constant="106" id="YHa-nE-Hjt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79645944148936165" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hEd-NY-ckA" firstAttribute="top" secondItem="6ac-zd-rYZ" secondAttribute="top" constant="101" id="J4H-pK-buE"/>
+                                    <constraint firstItem="hEd-NY-ckA" firstAttribute="centerX" secondItem="6ac-zd-rYZ" secondAttribute="centerX" id="Yxp-wy-VJA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ac-zd-rYZ" firstAttribute="leading" secondItem="iq1-9k-Sxg" secondAttribute="leading" id="Gvw-bJ-RIY"/>
+                            <constraint firstItem="aax-Mg-jm9" firstAttribute="top" secondItem="6ac-zd-rYZ" secondAttribute="bottom" id="JjP-Sr-KU1"/>
+                            <constraint firstAttribute="trailing" secondItem="6ac-zd-rYZ" secondAttribute="trailing" id="l6M-qn-Me6"/>
+                            <constraint firstItem="6ac-zd-rYZ" firstAttribute="top" secondItem="iq1-9k-Sxg" secondAttribute="top" id="m2F-Dh-yJ8"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMs-6a-n1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="1277"/>
+            <point key="canvasLocation" x="2179.5" y="484.5"/>
         </scene>
         <!--Face View Controller-->
         <scene sceneID="ACA-UF-tnc">
@@ -482,16 +521,6 @@ pour continuer l’expérience</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdR-3M-atW" userLabel="Overlay">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parfait ! Ajuste la position du maquillage si besoin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-V9-2Zs">
-                                        <rect key="frame" x="10" y="241" width="300" height="85"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="85" id="9TX-Zc-nWU"/>
-                                            <constraint firstAttribute="width" constant="300" id="TEx-hC-RIH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu peux reprendre une photo avec l'icône photo en bas a gauche, ou valider avec la flêche en bas a droite." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-g6-86a">
                                         <rect key="frame" x="10" y="334" width="300" height="97"/>
                                         <constraints>
@@ -499,6 +528,38 @@ pour continuer l’expérience</string>
                                             <constraint firstAttribute="width" constant="300" id="ya5-jO-Cwc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-Er-e4a" userLabel="Cross">
+                                        <rect key="frame" x="100" y="340" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Tol-QG-4jX"/>
+                                            <constraint firstAttribute="width" constant="26" id="ZRX-v5-2Lf"/>
+                                        </constraints>
+                                        <state key="normal" image="check-no"/>
+                                        <connections>
+                                            <action selector="crossBtn:" destination="YvM-ax-Qwl" eventType="touchUpInside" id="gI6-Yc-Yam"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-JG-QOt" userLabel="Check">
+                                        <rect key="frame" x="200" y="338" width="33" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="WFX-A3-M9o"/>
+                                            <constraint firstAttribute="height" constant="27" id="ywk-uU-w4D"/>
+                                        </constraints>
+                                        <state key="normal" image="check-yes"/>
+                                        <connections>
+                                            <segue destination="mhJ-Dh-TRC" kind="show" identifier="backHome" id="Sd5-qW-bN6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parfait ! Ajuste la position du maquillage si besoin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-V9-2Zs">
+                                        <rect key="frame" x="10" y="241" width="300" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="9TX-Zc-nWU"/>
+                                            <constraint firstAttribute="width" constant="300" id="TEx-hC-RIH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -511,9 +572,14 @@ pour continuer l’expérience</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79862034574468088" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Pgn-JG-QOt" firstAttribute="leading" secondItem="ngD-Er-e4a" secondAttribute="trailing" constant="74" id="88z-wy-wVu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pgn-JG-QOt" secondAttribute="trailing" constant="87" id="9PB-Nr-n86"/>
                                     <constraint firstItem="ehL-g6-86a" firstAttribute="centerX" secondItem="BdR-3M-atW" secondAttribute="centerX" id="KQH-Cp-a1g"/>
+                                    <constraint firstItem="ngD-Er-e4a" firstAttribute="top" secondItem="fmc-V9-2Zs" secondAttribute="bottom" constant="14" id="L93-Od-dhk"/>
                                     <constraint firstItem="fmc-V9-2Zs" firstAttribute="centerX" secondItem="BdR-3M-atW" secondAttribute="centerX" id="OiS-pl-KPb"/>
                                     <constraint firstItem="fmc-V9-2Zs" firstAttribute="centerY" secondItem="BdR-3M-atW" secondAttribute="centerY" id="WxJ-Nu-pK1"/>
+                                    <constraint firstItem="ngD-Er-e4a" firstAttribute="leading" secondItem="BdR-3M-atW" secondAttribute="leading" constant="100" id="aSH-du-37e"/>
+                                    <constraint firstItem="Pgn-JG-QOt" firstAttribute="top" secondItem="fmc-V9-2Zs" secondAttribute="bottom" constant="12" id="n65-hv-t7Z"/>
                                     <constraint firstItem="ehL-g6-86a" firstAttribute="top" secondItem="fmc-V9-2Zs" secondAttribute="bottom" constant="8" id="vOi-vr-g5H"/>
                                 </constraints>
                             </view>
@@ -529,7 +595,7 @@ pour continuer l’expérience</string>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-0I-8OV" userLabel="prevAsset">
-                                <rect key="frame" x="16" y="273" width="12.5" height="22"/>
+                                <rect key="frame" x="16" y="273" width="13" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12.5" id="mzs-hT-7kZ"/>
                                     <constraint firstAttribute="height" constant="22" id="vuj-0X-UxZ"/>
@@ -539,8 +605,8 @@ pour continuer l’expérience</string>
                                     <action selector="prevAsset:" destination="YvM-ax-Qwl" eventType="touchUpInside" id="QM1-gp-rm2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRX-xH-Ib9" userLabel="nextAsset">
-                                <rect key="frame" x="291.5" y="273" width="12.5" height="22"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRX-xH-Ib9" userLabel="nextAsset">
+                                <rect key="frame" x="292" y="273" width="13" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12.5" id="2CW-Gr-ZgJ"/>
                                     <constraint firstAttribute="height" constant="22" id="oWM-i8-51A"/>
@@ -649,21 +715,57 @@ pour continuer l’expérience</string>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="OverlayTextOne" destination="fmc-V9-2Zs" id="Hx2-hA-bmd"/>
+                        <outlet property="checkOverlay" destination="Pgn-JG-QOt" id="8G9-Et-pSO"/>
+                        <outlet property="closeOverlay" destination="UBJ-7U-Uza" id="heg-j0-AjG"/>
+                        <outlet property="crossOverlay" destination="ngD-Er-e4a" id="Bma-3p-Scp"/>
                         <outlet property="faceView" destination="jxK-1B-vdD" id="uag-nt-n41"/>
                         <outlet property="levreBtn" destination="AdD-kF-IiN" id="nsm-h3-h4Y"/>
                         <outlet property="likeBtn" destination="yAx-E7-FB4" id="lQG-d8-rKJ"/>
                         <outlet property="nextBtn" destination="xRX-xH-Ib9" id="n3Z-Wu-wAO"/>
                         <outlet property="overlayTextTwo" destination="ehL-g6-86a" id="6k6-Tz-MlW"/>
                         <outlet property="overlayView" destination="BdR-3M-atW" id="i1c-wa-fdP"/>
+                        <outlet property="photoBtn" destination="Wnw-ty-O8b" id="fFs-IP-vbL"/>
                         <outlet property="photoImageView" destination="3u9-9j-1pj" id="13J-jG-ipp"/>
                         <outlet property="prevBtn" destination="GXd-0I-8OV" id="0R6-1q-o3d"/>
                         <outlet property="switchProductView" destination="ezB-u0-jcH" id="NOB-NC-9V7"/>
+                        <outlet property="validBtn" destination="QFG-mD-6X7" id="siU-iM-PiG"/>
                         <outlet property="yeuxBtn" destination="SA2-a5-Lko" id="wSX-fg-YP3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsE-ee-4fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="486"/>
+            <point key="canvasLocation" x="3459" y="-386"/>
+        </scene>
+        <!--Tuto View Controller-->
+        <scene sceneID="bS4-uK-eHN">
+            <objects>
+                <viewController id="Dlq-eN-eFT" customClass="SITutoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lS4-xb-NYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="4SC-34-IiQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="su2-6Y-Gbi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="M3j-co-oe0">
+                                <rect key="frame" x="168" y="622" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y5Y-2n-Z0u"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="pageControl" destination="M3j-co-oe0" id="DnH-QB-325"/>
+                        <segue destination="B1o-L2-OMR" kind="show" identifier="toKid" id="0Im-Yf-qjD"/>
+                        <segue destination="FE7-DM-UBd" kind="show" identifier="toMom" id="fPe-9S-Qmd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilf-2X-e8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772.5" y="-336.5"/>
         </scene>
         <!--Tuto Main View Controller-->
         <scene sceneID="ooF-9z-5tC">
@@ -679,19 +781,15 @@ pour continuer l’expérience</string>
                         <color key="backgroundColor" red="0.39438808900523559" green="0.39438808900523559" blue="0.39438808900523559" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="NDn-eh-Jwp"/>
-                    <connections>
-                        <segue destination="B1o-L2-OMR" kind="show" id="voe-es-man"/>
-                        <segue destination="FE7-DM-UBd" kind="show" identifier="goMom" id="bHe-DE-3J7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cvi-7H-zlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="-370"/>
+            <point key="canvasLocation" x="880" y="-1138"/>
         </scene>
         <!--Mom Login View Controller-->
         <scene sceneID="LFd-up-Brc">
             <objects>
-                <viewController id="FE7-DM-UBd" customClass="MomLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="momVC" id="FE7-DM-UBd" customClass="MomLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jxD-gV-cgt"/>
                         <viewControllerLayoutGuide type="bottom" id="uyP-8V-ifJ"/>
@@ -703,12 +801,16 @@ pour continuer l’expérience</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-mom" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-sP-8Ok">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-cZ-JeJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-cZ-JeJ">
                                 <rect key="frame" x="34" y="38" width="252" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="hMo-fM-85B"/>
+                                    <constraint firstAttribute="width" constant="252" id="kFW-dF-Ntq"/>
+                                </constraints>
                                 <string key="text">En tant qu’Ambassadrice Sisley,
 connectez-vous pour
 débuter l’expérience.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -730,7 +832,7 @@ débuter l’expérience.</string>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Devenir Ambassadrice !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-i8-akP">
                                 <rect key="frame" x="34" y="425" width="252" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -750,6 +852,10 @@ débuter l’expérience.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bwn-cZ-JeJ" firstAttribute="top" secondItem="jxD-gV-cgt" secondAttribute="bottom" constant="18" id="DVv-oL-zKC"/>
+                            <constraint firstItem="bwn-cZ-JeJ" firstAttribute="centerX" secondItem="Sql-Ba-hHC" secondAttribute="centerX" id="MeQ-c7-MfX"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -759,7 +865,7 @@ débuter l’expérience.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVO-zy-dIH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="1551"/>
+            <point key="canvasLocation" x="772" y="819"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v2Z-cl-uKZ">
@@ -767,26 +873,30 @@ débuter l’expérience.</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="i0A-UB-a5I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9Y8-71-96d"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uGx-RD-WOh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0U6-1H-Jw7" kind="relationship" relationship="rootViewController" id="Ea9-9Q-xwl"/>
+                        <segue destination="Dlq-eN-eFT" kind="relationship" relationship="rootViewController" id="CGD-ry-AGb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISZ-2g-ceY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="-362"/>
+            <point key="canvasLocation" x="91.5" y="-336.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="apn" width="60" height="39"/>
         <image name="back" width="25" height="44"/>
         <image name="bg-mom" width="640" height="1136"/>
+        <image name="bump" width="225" height="212"/>
         <image name="button-add-mom" width="75" height="75"/>
         <image name="button-next-mom" width="75" height="75"/>
+        <image name="check-no" width="53" height="53"/>
+        <image name="check-yes" width="66" height="54"/>
         <image name="home-link" width="272" height="499"/>
         <image name="home-next-tuto" width="75" height="75"/>
         <image name="levre" width="77" height="40"/>
@@ -797,4 +907,7 @@ débuter l’expérience.</string>
         <image name="switch" width="60" height="60"/>
         <image name="yeux" width="72" height="41"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sd5-qW-bN6"/>
+    </inferredMetricsTieBreakers>
 </document>

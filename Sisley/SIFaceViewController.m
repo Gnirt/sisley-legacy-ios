@@ -12,6 +12,7 @@
 #import "SIFaceView.h"
 #import "SIEye.h"
 #import "SILip.h"
+#import "SIHomeViewController.h"
 
 @interface SIFaceViewController ()
 {
@@ -49,6 +50,9 @@
     lipAssets = [NSArray arrayWithObjects: @"6f323d", @"8d4c3a", @"923a54", @"994e65", @"b96466", @"c03c60", @"d29c8b", @"e8b1b4", @"e87780", @"eb5e4a", @"ed7f85", @"f9c5c3", @"fc9482", @"ff5148", nil];
     iEye = 0;
     iLip = 0;
+    
+    [self.checkOverlay setEnabled:NO];
+    [self.crossOverlay setEnabled:NO];
     
     self.switchProductView.alpha = 0.0f;
     
@@ -213,8 +217,28 @@
 - (IBAction)valid:(id)sender {
     
     if(isLikable){
-        // Show final validation
+        [self.closeOverlay setEnabled:NO];
         
+        [self.checkOverlay setEnabled:YES];
+        [self.crossOverlay setEnabled:YES];
+        
+        // Show final validation
+        [UIView animateWithDuration:0.5f delay:0.0 options: UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.overlayView.alpha = 1.0f;
+                             self.likeBtn.alpha = 0.0f;
+                             self.switchProductView.alpha = 0.0f;
+                             self.prevBtn.alpha = 0.0f;
+                             self.nextBtn.alpha = 0.0f;
+                             self.overlayTextTwo.alpha = 0.0f;
+                             self.checkOverlay.alpha = 1.0f;
+                             self.crossOverlay.alpha = 1.0f;
+                             self.validBtn.alpha = 0.0f;
+                             self.photoBtn.alpha = 0.0f;
+                             
+                             self.OverlayTextOne.text = @"As-tu terminé la séléction de tes produits ?";
+                         }
+                         completion:nil];
         
     }else{
         // Show tuto and activate swipe
@@ -245,9 +269,26 @@
 
 - (IBAction)likeItem:(id)sender {
     if(isLikable){
-        
+        // Fake
     }
 }
+
+- (IBAction)crossBtn:(id)sender {
+    [UIView animateWithDuration:0.5f delay:0.0 options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.overlayView.alpha = 0.0f;
+                         self.likeBtn.alpha = 1.0f;
+                         self.switchProductView.alpha = 1.0f;
+                         self.prevBtn.alpha = 1.0f;
+                         self.nextBtn.alpha = 1.0f;
+                         self.checkOverlay.alpha = 0.0f;
+                         self.crossOverlay.alpha = 0.0f;
+                         self.validBtn.alpha = 1.0f;
+                         self.photoBtn.alpha = 1.0f;
+                     }
+                     completion:nil];
+}
+
 
 #pragma mark Switch products
 
@@ -280,8 +321,6 @@
 
 - (IBAction)prevAsset:(id)sender {
     if(isLikable){
-        NSLog(@"prev");
-        
         if(isLevre){
             if(iLip == 0){
                 iLip = (int)lipAssets.count + 1;
@@ -341,14 +380,20 @@
     }
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"backHome"]) {
+        NSLog(@"asds");
+        SIHomeViewController *homeVC = segue.destinationViewController;
+        homeVC.bump = YES;
+    }
 }
-*/
+
 
 @end
