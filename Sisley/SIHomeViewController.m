@@ -23,7 +23,7 @@
     [self.nameMotherLabel setFont:[UIFont fontWithName:@"didot" size:28]];
     [self.motherSubLabel setFont:[UIFont fontWithName:@"Montserrat-Light" size:12]];
     
-    self.bump = YES;
+//    self.bump = YES;
     if(self.bump){
         self.overlay.alpha = 1.0f;
         self.bumpImageView.alpha = 1.0f;
