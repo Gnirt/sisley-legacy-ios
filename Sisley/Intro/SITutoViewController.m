@@ -112,7 +112,7 @@
 }
 
 -(void)configureViewFive {
-    self.pageFiveLabelOne = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 45, (self.screenHeight / 2.5) - 30, 200, 150)];
+    self.pageFiveLabelOne = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 50, (self.screenHeight / 2.5) - 30, 200, 150)];
     [self.pageFiveLabelOne setTitle: @"Je veux initier ma fille au maquillage." forState:UIControlStateNormal];
     self.pageFiveLabelOne.titleLabel.textAlignment = NSTextAlignmentLeft;
     self.pageFiveLabelOne.titleLabel.numberOfLines = 0;
@@ -121,7 +121,7 @@
     [self.pageFiveLabelOne addTarget:self action: @selector(goMom) forControlEvents: UIControlEventTouchUpInside];
     [self.contentView addSubview:self.pageFiveLabelOne];
     
-    self.pageFiveLabelTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 45, (self.screenHeight / 2.5) + 80, 200, 150)];
+    self.pageFiveLabelTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 50, (self.screenHeight / 2.5) + 80, 200, 150)];
     [self.pageFiveLabelTwo setTitle:@"Je veux être initiée par ma mère." forState:UIControlStateNormal];
     self.pageFiveLabelTwo.titleLabel.textAlignment = NSTextAlignmentLeft;
     self.pageFiveLabelTwo.titleLabel.numberOfLines = 0;
@@ -131,13 +131,13 @@
     [self.contentView addSubview:self.pageFiveLabelTwo];
     
     UIImage *imgMom = [UIImage imageNamed:@"head-mom"];
-    self.pageFiveImgOne = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 135, (self.screenHeight / 2) - 55, 75, 75)];
+    self.pageFiveImgOne = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 140, (self.screenHeight / 2) - 55, 75, 75)];
     [self.pageFiveImgOne setImage:imgMom forState:UIControlStateNormal];
     [self.pageFiveImgOne addTarget:self action: @selector(goMom) forControlEvents: UIControlEventTouchUpInside];
     [self.contentView addSubview:self.pageFiveImgOne];
     
     UIImage *imgKid = [UIImage imageNamed:@"head-daughter"];
-    self.pageFiveImgTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 135, (self.screenHeight / 2) + 55, 75, 75)];
+    self.pageFiveImgTwo = [[UIButton alloc] initWithFrame:CGRectMake(self.screenWidth * 4 + self.screenWidth / 2 - 140, (self.screenHeight / 2) + 55, 75, 75)];
     [self.pageFiveImgTwo setImage:imgKid forState:UIControlStateNormal];
     [self.pageFiveImgTwo addTarget:self action: @selector(goKid) forControlEvents: UIControlEventTouchUpInside];
     [self.contentView addSubview:self.pageFiveImgTwo];
