@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post-send-mom" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-Xe-WVt">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-post-sending" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-Xe-WVt">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-zp-reA">
@@ -31,7 +31,7 @@
         </view>
     </objects>
     <resources>
+        <image name="bg-post-sending" width="640" height="1136"/>
         <image name="button-next" width="15" height="27"/>
-        <image name="post-send-mom" width="640" height="1136"/>
     </resources>
 </document>

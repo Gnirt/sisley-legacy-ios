@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeProductSelectionViewController">
             <connections>
@@ -15,29 +20,39 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8du-Hn-Epm">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8du-Hn-Epm">
                     <rect key="frame" x="135" y="490" width="50" height="50"/>
                     <state key="normal" image="button-next-mom"/>
                     <connections>
                         <action selector="goToNextScreen:" destination="-1" eventType="touchUpInside" id="lFJ-I6-chr"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d42-yM-83a">
-                    <rect key="frame" x="-253" y="150" width="827" height="163"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d42-yM-83a">
+                    <rect key="frame" x="10" y="150" width="300" height="262"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="262" id="9fV-Cx-qfz"/>
+                        <constraint firstAttribute="width" constant="300" id="Sb8-8F-gIR"/>
+                    </constraints>
                     <string key="text">Merci !
 
-Marie à bien été ajoutée, vous pouvez à
-présent commencer l’initiation en lui 
-pré-sélectionnant des produits.
+Marie à bien été ajoutée, vous pouvez à présent commencer l’initiation en lui pré-sélectionnant des produits.
 
 Pour commencer, 
 taper sur ce bouton.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d42-yM-83a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Ca-0E-emS"/>
+                <constraint firstAttribute="trailing" secondItem="d42-yM-83a" secondAttribute="trailing" constant="10" id="KpF-m1-Xrc"/>
+                <constraint firstItem="d42-yM-83a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="Zal-kM-V57"/>
+                <constraint firstItem="d42-yM-83a" firstAttribute="centerX" secondItem="8du-Hn-Epm" secondAttribute="centerX" id="Zb2-Ct-I5A"/>
+                <constraint firstItem="d42-yM-83a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="j63-C5-9If"/>
+                <constraint firstItem="8du-Hn-Epm" firstAttribute="top" secondItem="d42-yM-83a" secondAttribute="bottom" constant="78" id="tdE-5Z-Q2Q"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

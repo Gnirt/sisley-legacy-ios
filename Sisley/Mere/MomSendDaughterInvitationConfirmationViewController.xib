@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mom-send-daughter-confirmation" translatesAutoresizingMaskIntoConstraints="NO" id="6YN-0W-9ha">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-invit" translatesAutoresizingMaskIntoConstraints="NO" id="6YN-0W-9ha">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0g-09-l3m">
@@ -31,7 +31,7 @@
         </view>
     </objects>
     <resources>
+        <image name="bg-invit" width="640" height="1136"/>
         <image name="button-orchidee-mom" width="75" height="75"/>
-        <image name="mom-send-daughter-confirmation" width="640" height="1136"/>
     </resources>
 </document>

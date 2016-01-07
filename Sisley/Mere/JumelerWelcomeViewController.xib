@@ -39,7 +39,7 @@
                         <action selector="goToNextScreen:" destination="-1" eventType="touchUpInside" id="3ks-4b-pxc"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jumeler-bg" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-YP-xVa">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-jumeler" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-YP-xVa">
                     <rect key="frame" x="0.0" y="0.0" width="321" height="568"/>
                 </imageView>
             </subviews>
@@ -48,8 +48,8 @@
         </view>
     </objects>
     <resources>
+        <image name="bg-jumeler" width="640" height="1136"/>
         <image name="eyeliner2" width="255" height="872"/>
-        <image name="jumeler-bg" width="640" height="1136"/>
         <image name="mere-bump-bg" width="640" height="1136"/>
         <image name="mom-panier" width="104" height="111"/>
         <image name="redstick2" width="404" height="839"/>
