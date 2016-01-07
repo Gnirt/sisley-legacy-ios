@@ -67,10 +67,10 @@
                 [UIImage imageNamed:@"selection-mom-lips.png"]];
     imgView3 = [[UIImageView alloc]initWithImage:
                 [UIImage imageNamed:@"selection-mom-eyes.png"]];
-    [imgView1 setFrame:CGRectMake(self.view.frame.size.width/2, 20, imgView1.frame.size.width/2, imgView1.frame.size.height/2)];
-    [imgView2 setFrame:CGRectMake(self.view.frame.size.width/2 + 20 + imgView1.frame.size.width, 30, imgView2.frame.size.width/2, imgView2.frame.size.height/2)];
+    [imgView1 setFrame:CGRectMake(self.view.frame.size.width, 20, imgView1.frame.size.width, imgView1.frame.size.height)];
+    [imgView2 setFrame:CGRectMake(self.view.frame.size.width + 20 + imgView1.frame.size.width, 30, imgView2.frame.size.width, imgView2.frame.size.height)];
     imgView2.alpha = 0.3;
-    [imgView3 setFrame:CGRectMake(self.view.frame.size.width/2 + 40 + imgView1.frame.size.width + imgView2.frame.size.width, 30, imgView3.frame.size.width/2, imgView3.frame.size.height/2)];
+    [imgView3 setFrame:CGRectMake(self.view.frame.size.width + 40 + imgView1.frame.size.width + imgView2.frame.size.width, 30, imgView3.frame.size.width, imgView3.frame.size.height)];
     imgView3.alpha = 0.3;
     myScrollView = [[UIScrollView alloc]initWithFrame:
                     CGRectMake(0, 20, self.view.frame.size.width, 80)];
