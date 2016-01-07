@@ -105,16 +105,17 @@
 
 
 -(void)didReceiveDataWithNotification:(NSNotification *)notification{
-    MCPeerID *peerID = [[notification userInfo] objectForKey:@"peerID"];
-    NSString *peerDisplayName = peerID.displayName;
+    //MCPeerID *peerID = [[notification userInfo] objectForKey:@"peerID"];
+    //NSString *peerDisplayName = peerID.displayName;
     
     NSData *receivedData = [[notification userInfo] objectForKey:@"data"];
     NSString *receivedText = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
     
+    NSLog(@"%@", receivedText);
     if([receivedText isEqualToString:@"DONE"]){
-        // Lancer anim fadeOut du overlay
-    }else if([receivedText isEqualToString:@"RAL"]){
-        
+        [self performSelectorOnMainThread:@selector(fadeOverlay) withObject:nil waitUntilDone:NO];
+    }else if([receivedText isEqualToString:@"RAL"] || [receivedText isEqualToString:@"EYE"]){
+        [self performSelectorOnMainThread:@selector(addProduct:) withObject:receivedText waitUntilDone:NO];
     }
 }
 
@@ -132,6 +133,27 @@
 // shared space between mom and daughter branch need merge
 //    JumelerWelcomeViewController *JumelerWelcome = [[JumelerWelcomeViewController alloc] initWithNibName:nil bundle:nil];
 //    [self presentViewController:JumelerWelcome animated:YES completion:nil];
+}
+
+- (void)fadeOverlay {
+    [UIView animateWithDuration:0.5f delay:0.0f options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.overlay.alpha = 0.0f;
+                     }
+                     completion:nil];
+}
+
+- (void)addProduct:(NSString *)element {
+    [UIView animateWithDuration:0.5f delay:0.5f options: UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         if ([element isEqualToString:@"RAL"]) {
+                             [self.ralImage setFrame:CGRectMake(109, self.ralImage.frame.origin.y, self.ralImage.frame.size.width, self.ralImage.frame.size.height)];
+                         } else if ([element isEqualToString:@"EYE"]) {
+                             [self.ralImage setFrame:CGRectMake(50, self.ralImage.frame.origin.y, self.ralImage.frame.size.width, self.ralImage.frame.size.height)];
+                             [self.eyeLinerImage setFrame:CGRectMake(170, self.eyeLinerImage.frame.origin.y, self.eyeLinerImage.frame.size.width, self.eyeLinerImage.frame.size.height)];
+                         }
+                     }
+                     completion:nil];
 }
 
 @end

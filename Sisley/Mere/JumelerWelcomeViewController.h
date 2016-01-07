@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface JumelerWelcomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *overlay;
+@property (weak, nonatomic) IBOutlet UIImageView *ralImage;
+@property (weak, nonatomic) IBOutlet UIImageView *eyeLinerImage;
+@property (weak, nonatomic) IBOutlet UIButton *cartButton;
 
 @end
