@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-color-picker.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-do-aZh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-color-picker" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-do-aZh">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
@@ -29,14 +29,14 @@ sont ses yeux ?</string>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVh-22-LIR" userLabel="color-picker">
                     <rect key="frame" x="-3" y="119" width="323" height="327"/>
-                    <state key="normal" image="color-picker-eyes.png"/>
+                    <state key="normal" image="color-picker-eyes"/>
                     <connections>
                         <action selector="goToMomHome:" destination="-1" eventType="touchUpInside" id="nw6-xJ-xWE"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg6-sT-Ggo">
                     <rect key="frame" x="135" y="490" width="50" height="50"/>
-                    <state key="normal" image="button-next-mom.png"/>
+                    <state key="normal" image="button-next-mom"/>
                     <connections>
                         <action selector="goToMomHome:" destination="-1" eventType="touchUpInside" id="Jys-LN-ci1"/>
                     </connections>
@@ -47,8 +47,8 @@ sont ses yeux ?</string>
         </view>
     </objects>
     <resources>
-        <image name="bg-color-picker.png" width="640" height="1151"/>
-        <image name="button-next-mom.png" width="75" height="75"/>
-        <image name="color-picker-eyes.png" width="561" height="572"/>
+        <image name="bg-color-picker" width="640" height="1151"/>
+        <image name="button-next-mom" width="75" height="75"/>
+        <image name="color-picker-eyes" width="561" height="572"/>
     </resources>
 </document>

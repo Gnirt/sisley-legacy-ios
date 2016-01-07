@@ -32,7 +32,7 @@
         [self.textTwoLabel setText:@"Merci d’avoir testé les produits ! \nBump ton téléphone avec celui de ta mère pour continuer l’expérience."];
         
         [self.homeLinkImage setImage:[UIImage imageNamed:@"home-link-2"]];
-        [self.btnNext.imageView setImage: [UIImage imageNamed:@"home-bump"]];
+        [self.btnNext setImage:[UIImage imageNamed:@"home-bump"] forState:UIControlStateNormal];
     }
 }
 

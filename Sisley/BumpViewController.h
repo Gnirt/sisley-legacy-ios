@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface BumpViewController : UIViewController
+@interface BumpViewController : UIViewController <MCBrowserViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *searchBtn;
+@property (weak, nonatomic) IBOutlet UIView *overlay;
 
 @end

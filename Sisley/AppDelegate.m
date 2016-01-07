@@ -17,6 +17,8 @@
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [Parse setApplicationId:@"L7MSAgqP9fdb77p7nFcmlGCG2FocXr88gTB3pLXC"
                   clientKey:@"Saw4NnZwvwIIrFf4534gjDcL80zdFI1fjBDs0lWT"];
+    
+    _mcManager = [[MCManager alloc] init];
     return YES;
 }
 

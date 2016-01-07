@@ -7,8 +7,15 @@
 //
 
 #import "JumelerWelcomeViewController.h"
+#import "AppDelegate.h"
 
 @interface JumelerWelcomeViewController ()
+
+@property (nonatomic, strong) AppDelegate *appDelegate;
+@property (nonatomic, strong) NSString *msg;
+@property (nonatomic, strong) NSMutableArray *arrConnectedDevices;
+
+-(void)peerDidChangeStateWithNotification:(NSNotification *)notification;
 
 @end
 
@@ -17,12 +24,98 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [[_appDelegate mcManager] setupPeerAndSessionWithDisplayName:[UIDevice currentDevice].name];
+    [[_appDelegate mcManager] advertiseSelf:YES];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(peerDidChangeStateWithNotification:)
+                                                 name:@"MCDidChangeStateNotification"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didReceiveDataWithNotification:)
+                                                 name:@"MCDidReceiveDataNotification"
+                                               object:nil];
+    
+    _arrConnectedDevices = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - MCBrowserViewControllerDelegate method implementation
+
+-(void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController{
+    [_appDelegate.mcManager.browser dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"back from bluetooth");
+}
+
+
+-(void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController{
+    [_appDelegate.mcManager.browser dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark - Private method implementation
+
+-(void)peerDidChangeStateWithNotification:(NSNotification *)notification{
+    MCPeerID *peerID = [[notification userInfo] objectForKey:@"peerID"];
+    NSString *peerDisplayName = peerID.displayName;
+    MCSessionState state = [[[notification userInfo] objectForKey:@"state"] intValue];
+    
+    if (state != MCSessionStateConnecting) {
+        if (state == MCSessionStateConnected) {
+            [_arrConnectedDevices addObject:peerDisplayName];
+        }
+        else if (state == MCSessionStateNotConnected){
+            if ([_arrConnectedDevices count] > 0) {
+                int indexOfPeer = [_arrConnectedDevices indexOfObject:peerDisplayName];
+                [_arrConnectedDevices removeObjectAtIndex:indexOfPeer];
+            }
+        }
+        //        [_tblConnectedDevices reloadData];
+    }
+}
+
+#pragma mark - Private method implementation
+
+-(void)sendMyMessage{
+    NSData *dataToSend = [self.msg dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray *allPeers = _appDelegate.mcManager.session.connectedPeers;
+    NSError *error;
+    
+    [_appDelegate.mcManager.session sendData:dataToSend
+                                     toPeers:allPeers
+                                    withMode:MCSessionSendDataReliable
+                                       error:&error];
+    
+    if (error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }
+    
+    //    [_tvChat setText:[_tvChat.text stringByAppendingString:[NSString stringWithFormat:@"I wrote:\n%@\n\n", _txtMessage.text]]];
+    //    [_txtMessage setText:@""];
+    //    [_txtMessage resignFirstResponder];
+}
+
+
+-(void)didReceiveDataWithNotification:(NSNotification *)notification{
+    MCPeerID *peerID = [[notification userInfo] objectForKey:@"peerID"];
+    NSString *peerDisplayName = peerID.displayName;
+    
+    NSData *receivedData = [[notification userInfo] objectForKey:@"data"];
+    NSString *receivedText = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    
+    if([receivedText isEqualToString:@"DONE"]){
+        // Go to new
+    }
+}
+
 
 /*
 #pragma mark - Navigation

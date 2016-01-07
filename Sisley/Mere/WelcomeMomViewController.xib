@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -29,7 +29,7 @@ en tapant sur ce bouton.</string>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a80-mN-jLA">
                     <rect key="frame" x="135" y="490" width="50" height="50"/>
-                    <state key="normal" image="button-add-mom.png"/>
+                    <state key="normal" image="button-add-mom"/>
                     <connections>
                         <action selector="goToAddDaughter:" destination="-1" eventType="touchUpInside" id="TYv-2q-fl6"/>
                     </connections>
@@ -45,6 +45,6 @@ en tapant sur ce bouton.</string>
         </view>
     </objects>
     <resources>
-        <image name="button-add-mom.png" width="75" height="75"/>
+        <image name="button-add-mom" width="75" height="75"/>
     </resources>
 </document>

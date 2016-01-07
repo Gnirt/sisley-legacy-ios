@@ -11,6 +11,9 @@
 		826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485CE1BEA17C400A862A7 /* CameraViewController.m */; };
 		826485D21BEA434F00A862A7 /* SIFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826485D11BEA434F00A862A7 /* SIFaceViewController.m */; };
 		8282BACF1C3D57AF009CAFE8 /* BumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8282BACE1C3D57AF009CAFE8 /* BumpViewController.m */; };
+		828FCC571C3D6494008E34B3 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 828FCC561C3D6494008E34B3 /* MCManager.m */; };
+		828FCC5B1C3E5F43008E34B3 /* MomBumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828FCC591C3E5F43008E34B3 /* MomBumpViewController.m */; };
+		828FCC5C1C3E5F43008E34B3 /* MomBumpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828FCC5A1C3E5F43008E34B3 /* MomBumpViewController.xib */; };
 		8293A3A91C3C355B00DE9E09 /* TutoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3A21C3C355B00DE9E09 /* TutoMainViewController.m */; };
 		8293A3AA1C3C355B00DE9E09 /* TutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8293A3A41C3C355B00DE9E09 /* TutoViewController.m */; };
 		8293A3AB1C3C355B00DE9E09 /* TutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8293A3A51C3C355B00DE9E09 /* TutoViewController.xib */; };
@@ -105,6 +108,11 @@
 		826485D11BEA434F00A862A7 /* SIFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFaceViewController.m; sourceTree = "<group>"; };
 		8282BACD1C3D57AF009CAFE8 /* BumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpViewController.h; sourceTree = "<group>"; };
 		8282BACE1C3D57AF009CAFE8 /* BumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BumpViewController.m; sourceTree = "<group>"; };
+		828FCC551C3D6494008E34B3 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
+		828FCC561C3D6494008E34B3 /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
+		828FCC581C3E5F43008E34B3 /* MomBumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MomBumpViewController.h; path = Mere/MomBumpViewController.h; sourceTree = "<group>"; };
+		828FCC591C3E5F43008E34B3 /* MomBumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MomBumpViewController.m; path = Mere/MomBumpViewController.m; sourceTree = "<group>"; };
+		828FCC5A1C3E5F43008E34B3 /* MomBumpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MomBumpViewController.xib; path = Mere/MomBumpViewController.xib; sourceTree = "<group>"; };
 		8293A3A11C3C355B00DE9E09 /* TutoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutoMainViewController.h; path = Intro/TutoMainViewController.h; sourceTree = "<group>"; };
 		8293A3A21C3C355B00DE9E09 /* TutoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutoMainViewController.m; path = Intro/TutoMainViewController.m; sourceTree = "<group>"; };
 		8293A3A31C3C355B00DE9E09 /* TutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutoViewController.h; path = Intro/TutoViewController.h; sourceTree = "<group>"; };
@@ -336,6 +344,9 @@
 				8293A3E21C3C358000DE9E09 /* WelcomeProductSelectionViewController.h */,
 				8293A3E31C3C358000DE9E09 /* WelcomeProductSelectionViewController.m */,
 				8293A3E41C3C358000DE9E09 /* WelcomeProductSelectionViewController.xib */,
+				828FCC581C3E5F43008E34B3 /* MomBumpViewController.h */,
+				828FCC591C3E5F43008E34B3 /* MomBumpViewController.m */,
+				828FCC5A1C3E5F43008E34B3 /* MomBumpViewController.xib */,
 			);
 			name = Mere;
 			sourceTree = "<group>";
@@ -416,6 +427,8 @@
 				82E4890D1BF4AEF5002E3EC7 /* SIFaceView.m */,
 				82E58A6A1BE8CBE50078E780 /* .gitignore */,
 				82F2B53D1BE8C63F0020AA2C /* Main.storyboard */,
+				828FCC551C3D6494008E34B3 /* MCManager.h */,
+				828FCC561C3D6494008E34B3 /* MCManager.m */,
 				82E489091BF4ABA1002E3EC7 /* SIHomeViewController.h */,
 				82E4890A1BF4ABA1002E3EC7 /* SIHomeViewController.m */,
 				829AF11F1BF393F40084F860 /* SILoginViewController.h */,
@@ -586,6 +599,7 @@
 				8293A3E61C3C358000DE9E09 /* DaughterComplexionPickerViewController.xib in Resources */,
 				8293A3F11C3C358000DE9E09 /* MomHomeViewController.xib in Resources */,
 				8293A3FE1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.xib in Resources */,
+				828FCC5C1C3E5F43008E34B3 /* MomBumpViewController.xib in Resources */,
 				8293A4001C3C358000DE9E09 /* MomSelectionViewController.xib in Resources */,
 				8293A3FA1C3C358000DE9E09 /* MomSelectionProductPreviewViewController.xib in Resources */,
 				8246372F1C3C54C100BBF985 /* bg-intro.mp4 in Resources */,
@@ -679,6 +693,7 @@
 				8293A40E1C3C35F500DE9E09 /* SITutoViewController.m in Sources */,
 				8293A3FD1C3C358000DE9E09 /* MomSelectionProductWelcomeViewController.m in Sources */,
 				8293A3AC1C3C355B00DE9E09 /* UserTypeChoiceViewController.m in Sources */,
+				828FCC571C3D6494008E34B3 /* MCManager.m in Sources */,
 				829AF11B1BF1ED5A0084F860 /* SINose.m in Sources */,
 				82E4890B1BF4ABA1002E3EC7 /* SIHomeViewController.m in Sources */,
 				8293A3F91C3C358000DE9E09 /* MomSelectionProductPreviewViewController.m in Sources */,
@@ -686,6 +701,7 @@
 				826485CF1BEA17C400A862A7 /* CameraViewController.m in Sources */,
 				82F2B5391BE8C63F0020AA2C /* AppDelegate.m in Sources */,
 				8293A3F01C3C358000DE9E09 /* MomHomeViewController.m in Sources */,
+				828FCC5B1C3E5F43008E34B3 /* MomBumpViewController.m in Sources */,
 				8293A4031C3C358000DE9E09 /* MomSendDaughterInvitationViewController.m in Sources */,
 				8293A3A91C3C355B00DE9E09 /* TutoMainViewController.m in Sources */,
 				8293A4051C3C358000DE9E09 /* WelcomeMomViewController.m in Sources */,

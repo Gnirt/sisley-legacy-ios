@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -16,52 +16,52 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light-preview-cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="WiJ-fI-uNW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light-preview-cart" translatesAutoresizingMaskIntoConstraints="NO" id="WiJ-fI-uNW">
                     <rect key="frame" x="0.0" y="144" width="320" height="162"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light-preview-cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-QX-LCc">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light-preview-cart" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-QX-LCc">
                     <rect key="frame" x="1" y="327" width="320" height="162"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HD-2A-8zZ">
                     <rect key="frame" x="134" y="32" width="55" height="58"/>
                     <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="3" backgroundImage="mom-panier.png">
+                    <state key="normal" title="3" backgroundImage="mom-panier">
                         <color key="titleColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-vh-AZf">
                     <rect key="frame" x="135" y="490" width="50" height="50"/>
                     <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" backgroundImage="button-valid-mom.png">
+                    <state key="normal" backgroundImage="button-valid-mom">
                         <color key="titleColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="goToNextScreen:" destination="-1" eventType="touchUpInside" id="q5H-oA-pmp"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selection-mom-lips.png" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-4G-coR">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selection-mom-lips" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-4G-coR">
                     <rect key="frame" x="134" y="298" width="53" height="29"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selection-mom-eyes.png" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-cv-Bk3">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selection-mom-eyes" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-cv-Bk3">
                     <rect key="frame" x="131" y="113" width="61" height="33"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbk-fe-CHj" userLabel="mascara2">
                     <rect key="frame" x="98" y="175" width="31" height="110"/>
-                    <state key="normal" backgroundImage="eyeliner2.png"/>
+                    <state key="normal" backgroundImage="eyeliner2"/>
                     <connections>
                         <action selector="changeAlpha:" destination="-1" eventType="touchUpInside" id="zzW-6i-1mm"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E79-D3-FTT" userLabel="eyeliner2">
                     <rect key="frame" x="191" y="170" width="31" height="110"/>
-                    <state key="normal" backgroundImage="mascara2.png"/>
+                    <state key="normal" backgroundImage="mascara2"/>
                     <connections>
                         <action selector="changeAlpha:" destination="-1" eventType="touchUpInside" id="nxr-3J-gso"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-74-QQd" userLabel="redstick2">
                     <rect key="frame" x="145" y="349" width="31" height="110"/>
-                    <state key="normal" backgroundImage="redstick2.png"/>
+                    <state key="normal" backgroundImage="redstick2"/>
                     <connections>
                         <action selector="changeAlpha:" destination="-1" eventType="touchUpInside" id="eao-1t-9cc"/>
                     </connections>
@@ -72,13 +72,13 @@
         </view>
     </objects>
     <resources>
-        <image name="button-valid-mom.png" width="75" height="75"/>
-        <image name="eyeliner2.png" width="255" height="872"/>
-        <image name="light-preview-cart.png" width="640" height="618"/>
-        <image name="mascara2.png" width="250" height="834"/>
-        <image name="mom-panier.png" width="104" height="111"/>
-        <image name="redstick2.png" width="404" height="839"/>
-        <image name="selection-mom-eyes.png" width="72" height="41"/>
-        <image name="selection-mom-lips.png" width="77" height="40"/>
+        <image name="button-valid-mom" width="75" height="75"/>
+        <image name="eyeliner2" width="255" height="872"/>
+        <image name="light-preview-cart" width="640" height="618"/>
+        <image name="mascara2" width="250" height="834"/>
+        <image name="mom-panier" width="104" height="111"/>
+        <image name="redstick2" width="404" height="839"/>
+        <image name="selection-mom-eyes" width="72" height="41"/>
+        <image name="selection-mom-lips" width="77" height="40"/>
     </resources>
 </document>

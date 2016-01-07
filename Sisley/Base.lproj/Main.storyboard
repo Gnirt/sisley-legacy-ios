@@ -12,8 +12,10 @@
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -216,7 +218,7 @@ pour continuer l’expérience</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-BL-S7o">
-                                        <rect key="frame" x="141" y="508" width="38" height="38"/>
+                                        <rect key="frame" x="141" y="511" width="38" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="XRV-0J-QhC"/>
                                             <constraint firstAttribute="height" constant="38" id="aZA-3n-av1"/>
@@ -282,7 +284,7 @@ pour continuer l’expérience</string>
                                     <constraint firstItem="idZ-jy-W7g" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="cEM-zB-cAm"/>
                                     <constraint firstItem="idZ-jy-W7g" firstAttribute="top" secondItem="nck-WX-5N9" secondAttribute="top" constant="113" id="dPs-dC-8A7"/>
                                     <constraint firstItem="eYZ-BL-S7o" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="tdc-gl-P4t"/>
-                                    <constraint firstItem="eYZ-BL-S7o" firstAttribute="top" secondItem="bdP-n1-elx" secondAttribute="bottom" constant="124" id="vBD-Gy-ftq"/>
+                                    <constraint firstItem="eYZ-BL-S7o" firstAttribute="top" secondItem="bdP-n1-elx" secondAttribute="bottom" constant="127" id="vBD-Gy-ftq"/>
                                     <constraint firstItem="IKN-WJ-HYH" firstAttribute="centerX" secondItem="nck-WX-5N9" secondAttribute="centerX" id="ytp-ug-cJm"/>
                                 </constraints>
                             </view>
@@ -312,7 +314,7 @@ pour continuer l’expérience</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnNext" destination="TUn-Y7-0Hi" id="GWO-0j-Qp0"/>
+                        <outlet property="btnNext" destination="TUn-Y7-0Hi" id="f1b-yv-afi"/>
                         <outlet property="bumpImageView" destination="idZ-jy-W7g" id="cnf-a2-HvR"/>
                         <outlet property="homeLinkImage" destination="NrQ-vQ-vWx" id="1g8-a6-6xU"/>
                         <outlet property="kidSubLabel" destination="xPn-2j-Baf" id="sRS-Iu-5lL"/>
@@ -477,11 +479,33 @@ pour continuer l’expérience</string>
                                             <constraint firstAttribute="height" constant="106" id="YHa-nE-Hjt"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active ton bluetooth, et clic sur &quot;Chercher un téléphone&quot;." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLF-jR-vi6">
+                                        <rect key="frame" x="37" y="227" width="300" height="108"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="Kj3-Tk-caH"/>
+                                            <constraint firstAttribute="width" constant="300" id="Tea-eU-myH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-XF-iW8">
+                                        <rect key="frame" x="101" y="376" width="173" height="30"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                        <state key="normal" title="Chercher un téléphone">
+                                            <color key="titleColor" red="0.1294117719" green="0.81568634510000004" blue="0.53333336109999996" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="browseForDevices:" destination="QhX-fD-ODM" eventType="touchUpInside" id="Dg6-gy-sSo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79645944148936165" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="hEd-NY-ckA" firstAttribute="top" secondItem="6ac-zd-rYZ" secondAttribute="top" constant="101" id="J4H-pK-buE"/>
+                                    <constraint firstItem="YLF-jR-vi6" firstAttribute="top" secondItem="hEd-NY-ckA" secondAttribute="bottom" constant="20" id="N4o-aM-bMK"/>
                                     <constraint firstItem="hEd-NY-ckA" firstAttribute="centerX" secondItem="6ac-zd-rYZ" secondAttribute="centerX" id="Yxp-wy-VJA"/>
+                                    <constraint firstItem="YLF-jR-vi6" firstAttribute="centerX" secondItem="6ac-zd-rYZ" secondAttribute="centerX" id="hDY-06-5sD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -494,6 +518,10 @@ pour continuer l’expérience</string>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="overlay" destination="6ac-zd-rYZ" id="pYw-4t-Mgk"/>
+                        <outlet property="searchBtn" destination="NfU-XF-iW8" id="ueU-4Z-VPU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMs-6a-n1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

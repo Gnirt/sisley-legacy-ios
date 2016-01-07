@@ -21,14 +21,14 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRt-g7-mrt" userLabel="color-picker">
                     <rect key="frame" x="-3" y="119" width="323" height="327"/>
-                    <state key="normal" image="color-picker-complexion.png"/>
+                    <state key="normal" image="color-picker-complexion"/>
                     <connections>
                         <action selector="goToEyesPicker:" destination="-1" eventType="touchUpInside" id="CmA-qe-l7W"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-SP-nFf">
                     <rect key="frame" x="135" y="490" width="50" height="50"/>
-                    <state key="normal" image="button-next-mom.png"/>
+                    <state key="normal" image="button-next-mom"/>
                     <connections>
                         <action selector="goToEyesPicker:" destination="-1" eventType="touchUpInside" id="fjm-4t-MW1"/>
                     </connections>
@@ -48,7 +48,7 @@ de son teint ?</string>
     </objects>
     <resources>
         <image name="bg-color-picker" width="640" height="1151"/>
-        <image name="button-next-mom.png" width="75" height="75"/>
-        <image name="color-picker-complexion.png" width="573" height="570"/>
+        <image name="button-next-mom" width="75" height="75"/>
+        <image name="color-picker-complexion" width="573" height="570"/>
     </resources>
 </document>
