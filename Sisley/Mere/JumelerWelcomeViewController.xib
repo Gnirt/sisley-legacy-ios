@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JumelerWelcomeViewController">
             <connections>
+                <outlet property="cartButton" destination="UR5-jR-nD0" id="KLU-hx-eAQ"/>
+                <outlet property="eyeLinerImage" destination="7X5-Yn-qhx" id="0uH-SX-M9K"/>
+                <outlet property="overlay" destination="XTQ-YP-xVa" id="haC-wa-pwH"/>
+                <outlet property="ralImage" destination="ias-KD-xfl" id="Ari-l1-CwT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,23 +19,39 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mere-bump-bg" translatesAutoresizingMaskIntoConstraints="NO" id="4cZ-m3-lt3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redstick2" translatesAutoresizingMaskIntoConstraints="NO" id="ias-KD-xfl">
+                    <rect key="frame" x="509" y="179" width="101" height="210"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyeliner2" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-Yn-qhx">
+                    <rect key="frame" x="518" y="138" width="85" height="291"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR5-jR-nD0">
+                    <rect key="frame" x="132" y="450" width="55" height="58"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="+" backgroundImage="mom-panier">
+                        <color key="titleColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToNextScreen:" destination="-1" eventType="touchUpInside" id="3ks-4b-pxc"/>
+                    </connections>
+                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jumeler-bg" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-YP-xVa">
                     <rect key="frame" x="0.0" y="0.0" width="321" height="568"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR5-jR-nD0">
-                    <rect key="frame" x="153" y="491" width="15" height="27"/>
-                    <state key="normal" image="button-next"/>
-                    <connections>
-                        <action selector="goToNextScreen:" destination="-1" eventType="touchUpInside" id="dqJ-a6-ChR"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
-        <image name="button-next" width="15" height="27"/>
+        <image name="eyeliner2" width="255" height="872"/>
         <image name="jumeler-bg" width="640" height="1136"/>
+        <image name="mere-bump-bg" width="640" height="1136"/>
+        <image name="mom-panier" width="104" height="111"/>
+        <image name="redstick2" width="404" height="839"/>
     </resources>
 </document>
