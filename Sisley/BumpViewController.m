@@ -143,7 +143,6 @@
     [UIView animateWithDuration:0.5f delay:0.0 options: UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          self.overlay.alpha = 0.0f;
-//                         self.searchBtn.alpha = 0.0f;
                      }
                      completion:nil];
     NSLog(@"back from bluetooth");
