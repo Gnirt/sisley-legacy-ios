@@ -7,8 +7,11 @@
 //
 
 #import "SILoginViewController.h"
+#import "Parse/Parse.h"
 
 @interface SILoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *emailText;
+@property (weak, nonatomic) IBOutlet UITextField *mdpText;
 
 @end
 
@@ -17,6 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)loginAction:(id)sender {
+//    [PFUser logInWithUsernameInBackground:self.emailText.text password:self.mdpText.text
+//                                    block:^(PFUser *user, NSError *error) {
+//                                        if (user) {
+//                                            NSLog(@"%@", user.);
+//                                        } else {
+//                                            // The login failed. Check error to see why.
+//                                            NSString *errorString = [error userInfo][@"error"];
+//                                            NSLog(@"%@", errorString);
+//                                        }
+//                                    }];
 }
 
 - (void)didReceiveMemoryWarning {

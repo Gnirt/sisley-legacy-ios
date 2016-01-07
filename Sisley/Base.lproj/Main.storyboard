@@ -91,7 +91,8 @@ reçus dans ton invitation.</string>
                                 </constraints>
                                 <state key="normal" backgroundImage="loginBtnConnexion"/>
                                 <connections>
-                                    <segue destination="mhJ-Dh-TRC" kind="show" id="xKf-A3-BOf"/>
+                                    <action selector="loginAction:" destination="B1o-L2-OMR" eventType="touchUpInside" id="P2b-1D-gJu"/>
+                                    <segue destination="mhJ-Dh-TRC" kind="show" id="RIz-r3-bmb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,6 +120,8 @@ reçus dans ton invitation.</string>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="btnConnexion" destination="yup-X9-5ul" id="LKn-jh-Wyf"/>
+                        <outlet property="emailText" destination="949-3y-ghW" id="5nx-rS-zy8"/>
+                        <outlet property="mdpText" destination="I98-sb-gib" id="ymT-Jh-1FL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icu-hn-oNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -473,7 +476,7 @@ pour continuer l’expérience</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bump" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-NY-ckA">
-                                        <rect key="frame" x="131" y="101" width="112.5" height="106"/>
+                                        <rect key="frame" x="131" y="101" width="113" height="106"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="112.5" id="P8j-jl-1EX"/>
                                             <constraint firstAttribute="height" constant="106" id="YHa-nE-Hjt"/>
@@ -500,7 +503,7 @@ pour continuer l’expérience</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79645944148936165" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="hEd-NY-ckA" firstAttribute="top" secondItem="6ac-zd-rYZ" secondAttribute="top" constant="101" id="J4H-pK-buE"/>
                                     <constraint firstItem="YLF-jR-vi6" firstAttribute="top" secondItem="hEd-NY-ckA" secondAttribute="bottom" constant="20" id="N4o-aM-bMK"/>
@@ -508,19 +511,104 @@ pour continuer l’expérience</string>
                                     <constraint firstItem="YLF-jR-vi6" firstAttribute="centerX" secondItem="6ac-zd-rYZ" secondAttribute="centerX" id="hDY-06-5sD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72e-QG-AIY" userLabel="content">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fille-bump-bg" translatesAutoresizingMaskIntoConstraints="NO" id="63a-GN-kOp" userLabel="background">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47b-M3-6ag" userLabel="switchProduct">
+                                        <rect key="frame" x="37" y="16" width="300" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-ly-6rE" userLabel="levre">
+                                                <rect key="frame" x="131" y="29" width="39" height="20"/>
+                                                <state key="normal" image="lip-bump-switch"/>
+                                                <connections>
+                                                    <action selector="levreBtn:" destination="QhX-fD-ODM" eventType="touchUpInside" id="Jto-Qe-Y6E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9N-iu-kEc" userLabel="yeux">
+                                                <rect key="frame" x="195" y="28" width="36" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="RED-Ag-fzS"/>
+                                                    <constraint firstAttribute="width" constant="36" id="bjZ-kf-uWq"/>
+                                                </constraints>
+                                                <state key="normal" image="eye-bump-switch"/>
+                                                <connections>
+                                                    <action selector="yeuxBtn:" destination="QhX-fD-ODM" eventType="touchUpInside" id="jB6-0w-e6l"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="S9N-iu-kEc" firstAttribute="leading" secondItem="wTY-ly-6rE" secondAttribute="trailing" constant="25" id="PBS-VI-ODr"/>
+                                            <constraint firstAttribute="trailing" secondItem="S9N-iu-kEc" secondAttribute="trailing" constant="69" id="cQW-UN-yCf"/>
+                                            <constraint firstItem="S9N-iu-kEc" firstAttribute="centerY" secondItem="47b-M3-6ag" secondAttribute="centerY" id="vYl-NN-3Bz"/>
+                                            <constraint firstItem="S9N-iu-kEc" firstAttribute="centerY" secondItem="wTY-ly-6rE" secondAttribute="centerY" id="xuU-4y-Shx"/>
+                                            <constraint firstItem="S9N-iu-kEc" firstAttribute="bottom" secondItem="wTY-ly-6rE" secondAttribute="bottom" id="zL8-dm-JhF"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsN-F6-hFs" userLabel="EYE">
+                                        <rect key="frame" x="145" y="188" width="85" height="291"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="bQm-aZ-8Kp"/>
+                                            <constraint firstAttribute="height" constant="291" id="p20-1B-l72"/>
+                                        </constraints>
+                                        <state key="normal" image="eyeliner2"/>
+                                        <connections>
+                                            <action selector="eyeAction:" destination="QhX-fD-ODM" eventType="touchUpInside" id="xam-rz-i3X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-Cv-Eyq" userLabel="lip">
+                                        <rect key="frame" x="137" y="229" width="101" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="101" id="QG9-Ao-EBA"/>
+                                            <constraint firstAttribute="height" constant="210" id="zye-TC-W9E"/>
+                                        </constraints>
+                                        <state key="normal" image="redstick2"/>
+                                        <connections>
+                                            <action selector="lipAction:" destination="QhX-fD-ODM" eventType="touchUpInside" id="WOV-VI-9mJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="47b-M3-6ag" firstAttribute="centerX" secondItem="72e-QG-AIY" secondAttribute="centerX" id="6xv-MA-8vs"/>
+                                    <constraint firstItem="OsN-F6-hFs" firstAttribute="centerY" secondItem="72e-QG-AIY" secondAttribute="centerY" id="9tn-cd-SPv"/>
+                                    <constraint firstItem="63a-GN-kOp" firstAttribute="top" secondItem="72e-QG-AIY" secondAttribute="top" id="GAG-qj-kaR"/>
+                                    <constraint firstAttribute="bottom" secondItem="63a-GN-kOp" secondAttribute="bottom" id="K6W-XP-IXl"/>
+                                    <constraint firstItem="47b-M3-6ag" firstAttribute="centerX" secondItem="63a-GN-kOp" secondAttribute="centerX" id="OrS-CQ-BjL"/>
+                                    <constraint firstItem="47b-M3-6ag" firstAttribute="top" secondItem="72e-QG-AIY" secondAttribute="top" constant="16" id="PWv-LI-IkL"/>
+                                    <constraint firstItem="63a-GN-kOp" firstAttribute="leading" secondItem="72e-QG-AIY" secondAttribute="leading" id="RU6-1O-JgI"/>
+                                    <constraint firstAttribute="bottom" secondItem="47b-M3-6ag" secondAttribute="bottom" constant="574" id="RwL-w0-szk"/>
+                                    <constraint firstItem="47b-M3-6ag" firstAttribute="leading" secondItem="72e-QG-AIY" secondAttribute="leading" constant="37" id="dwj-a3-mQt"/>
+                                    <constraint firstItem="lkZ-Cv-Eyq" firstAttribute="centerY" secondItem="72e-QG-AIY" secondAttribute="centerY" id="gtI-jf-fgB"/>
+                                    <constraint firstItem="lkZ-Cv-Eyq" firstAttribute="centerX" secondItem="72e-QG-AIY" secondAttribute="centerX" id="hKa-sK-vBn"/>
+                                    <constraint firstItem="OsN-F6-hFs" firstAttribute="centerX" secondItem="72e-QG-AIY" secondAttribute="centerX" id="vzP-B8-gcz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="72e-QG-AIY" secondAttribute="trailing" id="3p5-xx-dU0"/>
                             <constraint firstItem="6ac-zd-rYZ" firstAttribute="leading" secondItem="iq1-9k-Sxg" secondAttribute="leading" id="Gvw-bJ-RIY"/>
                             <constraint firstItem="aax-Mg-jm9" firstAttribute="top" secondItem="6ac-zd-rYZ" secondAttribute="bottom" id="JjP-Sr-KU1"/>
+                            <constraint firstItem="72e-QG-AIY" firstAttribute="leading" secondItem="iq1-9k-Sxg" secondAttribute="leading" id="KA5-M7-6yw"/>
+                            <constraint firstItem="72e-QG-AIY" firstAttribute="top" secondItem="iq1-9k-Sxg" secondAttribute="top" id="cSd-8h-vZr"/>
+                            <constraint firstItem="aax-Mg-jm9" firstAttribute="top" secondItem="72e-QG-AIY" secondAttribute="bottom" id="gfd-bA-ZWJ"/>
                             <constraint firstAttribute="trailing" secondItem="6ac-zd-rYZ" secondAttribute="trailing" id="l6M-qn-Me6"/>
                             <constraint firstItem="6ac-zd-rYZ" firstAttribute="top" secondItem="iq1-9k-Sxg" secondAttribute="top" id="m2F-Dh-yJ8"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="eyeLinerBtn" destination="OsN-F6-hFs" id="a4i-JT-ZX5"/>
+                        <outlet property="levreBtn" destination="wTY-ly-6rE" id="KkN-7H-9BZ"/>
                         <outlet property="overlay" destination="6ac-zd-rYZ" id="pYw-4t-Mgk"/>
+                        <outlet property="ralBtn" destination="lkZ-Cv-Eyq" id="WAQ-CR-U4a"/>
                         <outlet property="searchBtn" destination="NfU-XF-iW8" id="ueU-4Z-VPU"/>
+                        <outlet property="switchProductView" destination="47b-M3-6ag" id="aNC-7p-S5d"/>
+                        <outlet property="yeuxBtn" destination="S9N-iu-kEc" id="3Pw-ll-0D4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMs-6a-n1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -925,17 +1013,22 @@ débuter l’expérience.</string>
         <image name="button-next-mom" width="75" height="75"/>
         <image name="check-no" width="53" height="53"/>
         <image name="check-yes" width="66" height="54"/>
+        <image name="eye-bump-switch" width="72" height="41"/>
+        <image name="eyeliner2" width="255" height="872"/>
+        <image name="fille-bump-bg" width="640" height="1136"/>
         <image name="home-link" width="272" height="499"/>
         <image name="home-next-tuto" width="75" height="75"/>
         <image name="levre" width="77" height="40"/>
         <image name="like" width="115" height="115"/>
+        <image name="lip-bump-switch" width="77" height="40"/>
         <image name="loginBackground" width="640" height="1136"/>
         <image name="loginBtnConnexion" width="75" height="75"/>
         <image name="next" width="25" height="44"/>
+        <image name="redstick2" width="404" height="839"/>
         <image name="switch" width="60" height="60"/>
         <image name="yeux" width="72" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sd5-qW-bN6"/>
+        <segue reference="RIz-r3-bmb"/>
     </inferredMetricsTieBreakers>
 </document>

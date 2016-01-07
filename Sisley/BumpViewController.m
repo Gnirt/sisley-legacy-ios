@@ -14,8 +14,15 @@
 @property (nonatomic, strong) AppDelegate *appDelegate;
 @property (nonatomic, strong) NSString *msg;
 @property (nonatomic, strong) NSMutableArray *arrConnectedDevices;
+@property (weak, nonatomic) IBOutlet UIButton *levreBtn;
+@property (weak, nonatomic) IBOutlet UIButton *yeuxBtn;
+@property (weak, nonatomic) IBOutlet UIView *switchProductView;
+@property (weak, nonatomic) IBOutlet UIButton *ralBtn;
+@property (weak, nonatomic) IBOutlet UIButton *eyeLinerBtn;
 
 -(void)peerDidChangeStateWithNotification:(NSNotification *)notification;
+
+@property (nonatomic) BOOL isLevre;
 
 
 @end
@@ -25,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.isLevre = YES;
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [[_appDelegate mcManager] setupPeerAndSessionWithDisplayName:[UIDevice currentDevice].name];
     [[_appDelegate mcManager] advertiseSelf:YES];
@@ -48,6 +55,69 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)lipAction:(id)sender {
+    self.msg = @"RAL";
+    
+    [UIView animateWithDuration:0.5f delay:0.15 options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         [self.ralBtn setFrame:CGRectMake(-100, self.ralBtn.frame.origin.y, self.ralBtn.frame.size.width, self.ralBtn.frame.size.height)];
+                     }
+                     completion:nil];
+    
+    [self sendMyMessage];
+}
+
+
+- (IBAction)eyeAction:(id)sender {
+    self.msg = @"EYE";
+    
+    [UIView animateWithDuration:0.5f delay:0.15 options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         [self.eyeLinerBtn setFrame:CGRectMake(-100, self.eyeLinerBtn.frame.origin.y, self.eyeLinerBtn.frame.size.width, self.eyeLinerBtn.frame.size.height)];
+                     }
+                     completion:nil];
+    [self sendMyMessage];
+}
+
+#pragma mark Switch products
+
+- (IBAction)levreBtn:(id)sender {
+    if(!self.isLevre){
+        
+        [UIView animateWithDuration:0.25f delay:0.0 options: UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.switchProductView.center = CGPointMake(self.switchProductView.center.x + 65, self.switchProductView.center.y);
+                             self.levreBtn.alpha = 1.0f;
+                             self.yeuxBtn.alpha = 0.3f;
+                             self.ralBtn.alpha = 1.0f;
+                             self.eyeLinerBtn.alpha = 0.0f;
+                            
+                             [self.ralBtn setEnabled:YES];
+                             [self.eyeLinerBtn setEnabled:NO];
+                         }
+                         completion:nil];
+        self.isLevre = YES;
+    }
+}
+
+- (IBAction)yeuxBtn:(id)sender {
+    if(self.isLevre){
+        [UIView animateWithDuration:0.25f delay:0.0 options: UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             self.switchProductView.center = CGPointMake(self.switchProductView.center.x - 65, self.switchProductView.center.y);
+                             self.levreBtn.alpha = 0.3f;
+                             self.yeuxBtn.alpha = 1.0f;
+                             self.ralBtn.alpha = 0.0f;
+                             self.eyeLinerBtn.alpha = 1.0f;
+                             
+                             [self.ralBtn setEnabled:NO];
+                             [self.eyeLinerBtn setEnabled:YES];
+                         }
+                         completion:nil];
+        self.isLevre = NO;
+    }
 }
 
 
@@ -94,10 +164,6 @@
     if (error) {
         NSLog(@"%@", [error localizedDescription]);
     }
-    
-//    [_tvChat setText:[_tvChat.text stringByAppendingString:[NSString stringWithFormat:@"I wrote:\n%@\n\n", _txtMessage.text]]];
-//    [_txtMessage setText:@""];
-//    [_txtMessage resignFirstResponder];
 }
 
 
@@ -109,7 +175,6 @@
     NSString *receivedText = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
     
     NSLog(@"%@", receivedText);
-//    [_tvChat performSelectorOnMainThread:@selector(setText:) withObject:[_tvChat.text stringByAppendingString:[NSString stringWithFormat:@"%@ wrote:\n%@\n\n", peerDisplayName, receivedText]] waitUntilDone:NO];
 }
 
 
