@@ -112,7 +112,9 @@
     NSString *receivedText = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
     
     if([receivedText isEqualToString:@"DONE"]){
-        // Go to new
+        // Lancer anim fadeOut du overlay
+    }else if([receivedText isEqualToString:@"RAL"]){
+        
     }
 }
 
